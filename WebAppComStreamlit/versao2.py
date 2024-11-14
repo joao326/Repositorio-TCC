@@ -1,11 +1,10 @@
 import streamlit as st
-from Prova import Prova 
-#import random
+from Prova import Prova
 import time
 
 scorecard_placeholder = st.empty()
 
-# Configurações para a prova
+# Definição da quantidade questões
 questoes_por_topico = {
     "Basic Syntax": 1,
     "DataTypes, Variables": 1,
@@ -20,19 +19,10 @@ questoes_por_topico = {
 }
 total_de_questoes = sum(questoes_por_topico.values())
 
-# Inicializar a prova e gerar perguntas
-prova = Prova('perguntas.json', questoes_por_topico)
-prova.gerar_prova()
-
-
-# Ativando session_state
+# Apelidando session_state
 ss = st.session_state
-# Inicializando session_states
-#if "questao_atual" not in ss:
-    #ss.questao_atual = 0
-    #ss.pontuacao = 0
-    #ss.resultados = []
 
+# Inicializando session_states
 if 'counter' not in ss:
     ss['counter'] = 0
 if 'start' not in ss:
@@ -43,19 +33,23 @@ if 'refresh' not in ss:
     ss['refresh'] = False
 if "button_label" not in ss:
     ss['button_label'] = ['START', 'SUBMIT', 'RELOAD']
-if 'current_quiz' not in ss:
-    ss['current_quiz'] = {}
+if 'prova' not in ss:
+    prova = Prova('perguntas.json', questoes_por_topico)
+    prova.gerar_prova()
+    ss['prova'] = prova.prova
+if 'current_question' not in ss:
+    ss['current_question'] = 0
 if 'user_answers' not in ss:
     ss['user_answers'] = []
-if 'grade' not in ss:
-    ss['grade'] = 0
+if 'score' not in ss:
+    ss['score'] = 0
 
 # Caractere de nova linha
-def nl ( num_de_linhas ):
+def nl(num_de_linhas):
     for i in range(num_de_linhas):
         st.write(" ")
 
-# Function for button click
+# Função para click em botões
 def btn_click():
     ss.counter += 1
     if ss.counter > 2: 
@@ -63,60 +57,50 @@ def btn_click():
         ss.clear()
     else:
         update_session_state()
-        with st.spinner("*this may take a while*"):
+        with st.spinner("*Espere um segundo...*"):
             time.sleep(2)
 
-# Function to update current session
+# Atualizar sessão atual
 def update_session_state():
     if ss.counter == 1:
         ss['start'] = True
         prova = Prova('perguntas.json', questoes_por_topico)
         prova.gerar_prova()
-        ss.current_test = prova
+        ss['prova'] = prova.prova
+        ss['current_question'] = 0
+        ss['user_answers'] = []
+        ss['score'] = 0
     elif ss.counter == 2:
-        # Set start to False
-        ss['start'] = True
-        # Set stop to True
         ss['stop'] = True
 
-# Initializing Button Text
-st.button(label=ss.button_label[ss.counter], 
-        key='button_press', on_click= btn_click)
+# Inicializando botão
+st.button(label=ss.button_label[ss.counter], key='button_press', on_click=btn_click)
 
 def exibir_questao():
-    with st.container():
-        if(ss.start):
-            for i in range(total_de_questoes+1):
-                number_placeholder = st.empty()
-                question_placeholder = st.empty()
-                options_placeholder = st.empty()
-                results_placeholder = st.empty()
-                expander_area = st.empty()
-                
+    if ss['start'] and ss['current_question'] < total_de_questoes:
+        current_question = ss['current_question']
+        question = ss['prova'][current_question]
 
-                current_question = i+1
-                number_placeholder.write(f"Question {current_question}*")
-                question_placeholder.write(f"**{ss.current_test[i].get('question')}**")
-                options = ss.current_test[i].get("options")
-                options_placeholder.radio("",options, index=1,key=f"Q{current_question}")
-                nl(1)
+        st.header(f"Pergunta {current_question + 1}")
+        st.write(question['question'])
 
-                #Grade answers and return corrections
-                if ss.stop:
-                    # Track length of user_answers
-                    if len(ss.user_answers) < total_de_questoes:
-                        # comparing answers to track score
-                        if ss[f'Q{current_question}'] == ss.current_test[i].get("correct_answer"):
-                            ss.user_answers.append(True)
-                        else:
-                            pass
-                        if ss.user_answer[i]==True:
-                            results_placeholder.sucess("CORRECT")
-                        else:
-                            results_placeholder.error("INCORRECT")
-                        expander_area.write(f"*{ss.current_test[i].get('explanation')}*")
-    if ss.stop:
-        ss['grade'] == ss.user_answer.count(True)
-        scorecard_placeholder.write(f"### **Your Final Score : {ss['grade']} / {len(ss.current_test)}**")   
+        options = question['options']
+        user_choice = st.radio("Escolha uma resposta:", options, key=f"question_{current_question}")
+
+        if st.button("Verificar Resposta", key=f"verificar_{current_question}"):
+            if user_choice.strip() == question['answer'].strip():
+                st.success("Resposta Correta!")
+                ss['score'] += 1
+            else:
+                st.error(f"Resposta Incorreta! A resposta correta é: {question['answer']}")
+            ss['user_answers'].append(user_choice)
+            ss['current_question'] += 1
+
+    elif ss['current_question'] >= total_de_questoes:
+        st.write("## Resultado Final")
+        st.write(f"Você acertou {ss['score']} de {total_de_questoes} perguntas!")
+        if st.button("Reiniciar Quiz"):
+            ss['counter'] = 0
+            ss.clear()
 
 exibir_questao()
