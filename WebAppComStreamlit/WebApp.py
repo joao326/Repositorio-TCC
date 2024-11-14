@@ -84,7 +84,7 @@ def mostrar_pergunta():
     st.write(question['question'])
 
     options = question['options']
-    user_choice = st.radio("Escolha uma resposta:", options, key=f"question_{current_question}")
+    user_choice = st.radio("Escolha uma resposta:", options, index=None, key=f"question_{current_question}")
     return user_choice
 
 def verificar_resposta(user_choice):
