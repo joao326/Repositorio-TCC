@@ -76,31 +76,42 @@ def update_session_state():
 # Inicializando botão
 st.button(label=ss.button_label[ss.counter], key='button_press', on_click=btn_click)
 
-def exibir_questao():
+def mostrar_pergunta():
+    current_question = ss['current_question']
+    question = ss['prova'][current_question]
+
+    st.header(f"Pergunta {current_question + 1}")
+    st.write(question['question'])
+
+    options = question['options']
+    user_choice = st.radio("Escolha uma resposta:", options, key=f"question_{current_question}")
+    return user_choice
+
+def verificar_resposta(user_choice):
+    current_question = ss['current_question']
+    question = ss['prova'][current_question]
+
+    if user_choice.strip() == question['answer'].strip():
+        st.success("Resposta Correta!")
+        ss['score'] += 1
+    else:
+        st.error(f"Resposta Incorreta! A resposta correta é: {question['answer']}")
+    ss['user_answers'].append(user_choice)
+    ss['current_question'] += 1
+
+def mostrar_resultado():
+    st.write("## Resultado Final")
+    st.write(f"Você acertou {ss['score']} de {total_de_questoes} perguntas!")
+    if st.button("Reiniciar Quiz"):
+        ss['counter'] = 0
+        ss.clear()    
+
+def gerenciar_questao():
     if ss['start'] and ss['current_question'] < total_de_questoes:
-        current_question = ss['current_question']
-        question = ss['prova'][current_question]
-
-        st.header(f"Pergunta {current_question + 1}")
-        st.write(question['question'])
-
-        options = question['options']
-        user_choice = st.radio("Escolha uma resposta:", options, key=f"question_{current_question}")
-
-        if st.button("Verificar Resposta", key=f"verificar_{current_question}"):
-            if user_choice.strip() == question['answer'].strip():
-                st.success("Resposta Correta!")
-                ss['score'] += 1
-            else:
-                st.error(f"Resposta Incorreta! A resposta correta é: {question['answer']}")
-            ss['user_answers'].append(user_choice)
-            ss['current_question'] += 1
+        user_choice = mostrar_pergunta()
+        if st.button("Verificar Resposta", key=f"verificar_{ss['current_question']}"):
+            verificar_resposta(user_choice)
 
     elif ss['current_question'] >= total_de_questoes:
-        st.write("## Resultado Final")
-        st.write(f"Você acertou {ss['score']} de {total_de_questoes} perguntas!")
-        if st.button("Reiniciar Quiz"):
-            ss['counter'] = 0
-            ss.clear()
-
-exibir_questao()
+        mostrar_resultado()
+gerenciar_questao()
