@@ -1,6 +1,10 @@
-import streamlit as st
+import streamlit as st 
 from Prova import Prova
 import time
+
+# Streamlit é stateless
+# Stateless: código é reexecutado a cada interação do usuário
+# Variáveis normais são reinicializadas, mas session states não
 
 scorecard_placeholder = st.empty()
 
@@ -19,7 +23,7 @@ questoes_por_topico = {
 }
 total_de_questoes = sum(questoes_por_topico.values())
 
-# Apelidando session_state
+# ss armazena e gerencia estados de variáveis entre interações do usuário
 ss = st.session_state
 
 # Inicializando session_states
@@ -34,7 +38,7 @@ if 'refresh' not in ss:
 if "button_label" not in ss:
     ss['button_label'] = ['START', 'SUBMIT', 'RELOAD']
 if 'prova' not in ss:
-    prova = Prova('perguntas.json', questoes_por_topico)
+    prova = Prova('perguntasT.json', questoes_por_topico)
     prova.gerar_prova()
     ss['prova'] = prova.prova
 if 'current_question' not in ss:
@@ -64,7 +68,7 @@ def btn_click():
 def update_session_state():
     if ss.counter == 1:
         ss['start'] = True
-        prova = Prova('perguntas.json', questoes_por_topico)
+        prova = Prova('perguntasT.json', questoes_por_topico)
         prova.gerar_prova()
         ss['prova'] = prova.prova
         ss['current_question'] = 0
@@ -103,15 +107,17 @@ def mostrar_resultado():
     st.write("## Resultado Final")
     st.write(f"Você acertou {ss['score']} de {total_de_questoes} perguntas!")
     if st.button("Reiniciar Quiz"):
-        ss['counter'] = 0
+        ss['counter'] = 0 # ?
         ss.clear()    
 
 def gerenciar_questao():
+    # if do processo de resolução da prova
     if ss['start'] and ss['current_question'] < total_de_questoes:
         user_choice = mostrar_pergunta()
         if st.button("Verificar Resposta", key=f"verificar_{ss['current_question']}"):
             verificar_resposta(user_choice)
 
+    # Mostrar resultado ao finalizar
     elif ss['current_question'] >= total_de_questoes:
         mostrar_resultado()
 gerenciar_questao()
