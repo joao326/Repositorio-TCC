@@ -45,14 +45,14 @@ if 'score' not in ss:
     ss['score'] = 0
 
 # Caractere de nova linha
-def nl(num_de_linhas):
+def new_line(num_de_linhas):
     for i in range(num_de_linhas):
         st.write(" ")
 
 # Função para click em botões
 def btn_click():
     ss.counter += 1
-    if ss.counter > 2: 
+    if ss.counter > 2: # Apenas um click por ação
         ss.counter = 0
         ss.clear()
     else:
