@@ -8,13 +8,6 @@ ss = st.session_state
 if 'num_questoes' not in ss:
     ss['num_questoes'] = 30  # Valor padrão
 
-st.sidebar.header("Configurações da Prova")
-ss['num_questoes'] = st.sidebar.radio(
-    "Escolha a quantidade de questões:",
-    options=[30, 40, 50, 60],
-    index=0  # Seleciona 30 como padrão
-)
-
 def ajustar_questoes_por_topico(num_questoes):
     # Calcula o número de questões por tópico com base na quantidade total selecionada
     questoes_por_topico = {}
@@ -156,6 +149,12 @@ def gerenciar_prova():
 if not ss['start']:
     st.title("GAP.AI")
     st.write("Bem vindo! Descubra suas lacunas de aprendizado e saiba qual conteúdo estudar para aprender de maneira mais eficiente!")
+    st.header("Configurações da Prova")
+    ss['num_questoes'] = st.radio(
+        "Escolha a quantidade de questões(quanto mais questões mais exato é o resultado):",
+        options=[3,30, 40, 50, 60],
+        index=0  # Seleciona 30 como padrão
+    )
     if st.button("Iniciar Prova"):
         atualizar_ss()
         st.rerun()
