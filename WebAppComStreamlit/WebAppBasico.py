@@ -5,8 +5,27 @@ from pfa import registrar_resposta, calcular_pfa, gerar_feedback_final
 # Streamlit é stateless; variáveis persistem no session_state
 ss = st.session_state
 
-# Definição da quantidade questões
-questoes_por_topico = {
+if 'num_questoes' not in ss:
+    ss['num_questoes'] = 30  # Valor padrão
+
+st.sidebar.header("Configurações da Prova")
+ss['num_questoes'] = st.sidebar.radio(
+    "Escolha a quantidade de questões:",
+    options=[30, 40, 50, 60],
+    index=0  # Seleciona 30 como padrão
+)
+
+def ajustar_questoes_por_topico(num_questoes):
+    # Calcula o número de questões por tópico com base na quantidade total selecionada
+    questoes_por_topico = {}
+    num_questoes_por_topico = num_questoes // len(questoes_por_topico_total)
+    
+    for topico in questoes_por_topico_total:
+        questoes_por_topico[topico] = num_questoes_por_topico
+    
+    return questoes_por_topico
+
+questoes_por_topico_total = {
     "Basic Syntax": 11,
     "DataTypes, Variables": 11,
     "Conditionals": 9,
@@ -18,6 +37,9 @@ questoes_por_topico = {
     "Packages": 12,
     "Working With Files and APIs": 11,
 }
+
+# Ajusta o dicionário de acordo com a escolha do usuário
+questoes_por_topico = ajustar_questoes_por_topico(ss['num_questoes'])
 total_de_questoes = sum(questoes_por_topico.values())
 
 def inicializar_ss():
@@ -56,7 +78,6 @@ def atualizar_ss():
     ss['score'] = 0
     ss['desempenho_usuario'] = {topico: {"acertos": 0, "erros": 0} for topico in questoes_por_topico}
 
-# Mostrar uma pergunta
 def mostrar_pergunta():
     current_question = ss['current_question']
     question = ss['prova'][current_question]
@@ -67,7 +88,7 @@ def mostrar_pergunta():
     user_choice = st.radio("Escolha uma resposta:", options, index=None, key=f"question_{current_question}")
     return user_choice
 
-# Verificar resposta e registrar no PFA
+# registrar no PFA
 def verificar_resposta(user_choice):
     current_question = ss['current_question']
     question = ss['prova'][current_question]
@@ -76,7 +97,7 @@ def verificar_resposta(user_choice):
         st.error("Por favor, selecione uma questão antes de avançar.")
         return
 
-    dificuldade = question.get("difficulty", "medium")  # Use 'medium' como padrão
+    dificuldade = question.get("difficulty", "medium")  # 'medium' como padrão
     acertou = user_choice.strip() == question['answer'].strip()
     registrar_resposta(ss['desempenho_usuario'], question['topic'], acertou, dificuldade)
 
@@ -94,7 +115,6 @@ def proxima_pergunta():
     ss['feedback'] = False    
     st.rerun()
 
-# Mostrar o resultado final com feedback
 def mostrar_resultado():
     st.write("## Resultado Final")
     st.write(f"Você acertou {ss['score']} de {total_de_questoes} perguntas!")
@@ -114,8 +134,7 @@ def mostrar_resultado():
         ss.clear()
         st.rerun()
 
-# Gerenciar perguntas e progresso
-def gerenciar_questao():
+def gerenciar_prova():
     if ss['start'] and ss['current_question'] < total_de_questoes:
         st.write(f"Progresso: {ss['current_question'] + 1} / {total_de_questoes}")
         user_choice = mostrar_pergunta()
@@ -127,7 +146,7 @@ def gerenciar_questao():
                 verificar_resposta(user_choice)
 
         with col2:        
-            if ss['feedback']:  # Caso ainda não tenha mostrado o feedback
+            if ss['feedback']:
                 if st.button("Próxima Pergunta", key=f"proxima_{ss['current_question']}"):
                     proxima_pergunta()
     elif ss['current_question'] >= total_de_questoes:
@@ -141,5 +160,4 @@ if not ss['start']:
         atualizar_ss()
         st.rerun()
 
-# Gerenciar prova
-gerenciar_questao()
+gerenciar_prova()
