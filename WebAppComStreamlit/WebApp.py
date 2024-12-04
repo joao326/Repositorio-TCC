@@ -79,8 +79,10 @@ def update_session_state():
         ss['score'] = 0
     elif ss.counter == 2:
         ss['stop'] = True
+    else:
+        st.write("# GAP.AI")
 
-st.write("# GAP.AI")
+
 # Inicializando botão
 st.button(label=ss.button_label[ss.counter], key='button_press', on_click=btn_click)
 
@@ -99,11 +101,12 @@ def verificar_resposta(user_choice):
     current_question = ss['current_question']
     question = ss['prova'][current_question]
 
-    if user_choice.strip() == question['answer'].strip():
-        st.success("Resposta Correta!")
-        ss['score'] += 1
-    else:
-        st.error(f"Resposta Incorreta! A resposta correta é: {question['answer']}")
+    with st.container():
+        if user_choice.strip() == question['answer'].strip():
+            st.success("Resposta Correta!")
+            ss['score'] += 1
+        else:
+            st.error(f"Resposta Incorreta! A resposta correta é: {question['answer']}")
     ss['user_answers'].append(user_choice)
     ss['feedback'] = True
 
@@ -122,19 +125,23 @@ def mostrar_resultado():
 def gerenciar_questao():
     # if do processo de resolução da prova
     if ss['start'] and ss['current_question'] < total_de_questoes:
+        st.write(f"Progresso: {ss['current_question'] + 1} / {total_de_questoes}")
         user_choice = mostrar_pergunta()
 
-        ss['user_choice'] = user_choice
+        #ss['user_choice'] = user_choice
 
-        # Altera o botão dinamicamente
-        if not ss['feedback']:  # Caso ainda não tenha mostrado o feedback
+        # Criação de colunas para botões a seguir
+        col1, col2 = st.columns([1,2])
+        
+        with col1:
             if st.button("Verificar Resposta", key=f"verificar_{ss['current_question']}"):
                 verificar_resposta(user_choice)
-                
-        else:  # Após mostrar o feedback, botão muda para "Próxima Pergunta"
-            if st.button("Próxima Pergunta", key=f"proxima_{ss['current_question']}"):
-                proxima_pergunta()
-                st.rerun()
+
+        with col2:        
+            if ss['feedback']:  # Caso ainda não tenha mostrado o feedback
+                if st.button("Próxima Pergunta", key=f"proxima_{ss['current_question']}"):
+                    proxima_pergunta()
+                    st.rerun()
 
     # Mostrar resultado ao finalizar
     elif ss['current_question'] >= total_de_questoes:
