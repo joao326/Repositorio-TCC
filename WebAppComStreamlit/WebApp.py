@@ -101,12 +101,16 @@ def verificar_resposta(user_choice):
     current_question = ss['current_question']
     question = ss['prova'][current_question]
 
-    with st.container():
-        if user_choice.strip() == question['answer'].strip():
-            st.success("Resposta Correta!")
-            ss['score'] += 1
-        else:
-            st.error(f"Resposta Incorreta! A resposta correta é: {question['answer']}")
+    # Verifica se usuário selecionou resposta
+    if user_choice is None:
+        st.error("Por favor, selecione uma questão antes de avançar.")
+        return # Interrompe execução da função caso sem escolha
+
+    if user_choice.strip() == question['answer'].strip():
+        st.success("Resposta Correta!")
+        ss['score'] += 1
+    else:
+        st.error(f"Resposta Incorreta! A resposta correta é: {question['answer']}")
     ss['user_answers'].append(user_choice)
     ss['feedback'] = True
 
