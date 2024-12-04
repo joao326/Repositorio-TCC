@@ -48,6 +48,9 @@ if 'user_answers' not in ss:
 if 'score' not in ss:
     ss['score'] = 0
 
+if 'feedback' not in ss:
+    ss['feedback'] = False
+
 # Caractere de nova linha
 def new_line(num_de_linhas):
     for i in range(num_de_linhas):
@@ -77,6 +80,7 @@ def update_session_state():
     elif ss.counter == 2:
         ss['stop'] = True
 
+st.write("# GAP.AI")
 # Inicializando botão
 st.button(label=ss.button_label[ss.counter], key='button_press', on_click=btn_click)
 
@@ -101,21 +105,36 @@ def verificar_resposta(user_choice):
     else:
         st.error(f"Resposta Incorreta! A resposta correta é: {question['answer']}")
     ss['user_answers'].append(user_choice)
+    ss['feedback'] = True
+
+def proxima_pergunta():
     ss['current_question'] += 1
+    ss['feedback'] = False
 
 def mostrar_resultado():
     st.write("## Resultado Final")
     st.write(f"Você acertou {ss['score']} de {total_de_questoes} perguntas!")
     if st.button("Reiniciar Quiz"):
         ss['counter'] = 0 # ?
-        ss.clear()    
+        ss.clear()   
+        st.rerun() 
 
 def gerenciar_questao():
     # if do processo de resolução da prova
     if ss['start'] and ss['current_question'] < total_de_questoes:
         user_choice = mostrar_pergunta()
-        if st.button("Verificar Resposta", key=f"verificar_{ss['current_question']}"):
-            verificar_resposta(user_choice)
+
+        ss['user_choice'] = user_choice
+
+        # Altera o botão dinamicamente
+        if not ss['feedback']:  # Caso ainda não tenha mostrado o feedback
+            if st.button("Verificar Resposta", key=f"verificar_{ss['current_question']}"):
+                verificar_resposta(user_choice)
+                
+        else:  # Após mostrar o feedback, botão muda para "Próxima Pergunta"
+            if st.button("Próxima Pergunta", key=f"proxima_{ss['current_question']}"):
+                proxima_pergunta()
+                st.rerun()
 
     # Mostrar resultado ao finalizar
     elif ss['current_question'] >= total_de_questoes:
