@@ -79,12 +79,18 @@ def update_session_state():
         ss['score'] = 0
     elif ss.counter == 2:
         ss['stop'] = True
-    else:
-        st.write("# GAP.AI")
 
+#st.write("# GAP.AI")
+if ss['counter'] == 0:
+    st.title("GAP.AI")
+    #st.subheader("Bem vindo!")
+    st.write("Bem vindo! Descubra suas lacunas de aprendizado e saiba qual conteúdo estudar para aprender de maneira mais eficiente!")
+    st.write("Clique no botão abaixo para iniciar a prova.")
 
+col3, col4 = st.columns([1,1.25])
 # Inicializando botão
-st.button(label=ss.button_label[ss.counter], key='button_press', on_click=btn_click)
+with col3:
+    st.button(label=ss.button_label[ss.counter], key='button_press', on_click=btn_click)
 
 def mostrar_pergunta():
     current_question = ss['current_question']
@@ -101,12 +107,16 @@ def verificar_resposta(user_choice):
     current_question = ss['current_question']
     question = ss['prova'][current_question]
 
-    with st.container():
-        if user_choice.strip() == question['answer'].strip():
-            st.success("Resposta Correta!")
-            ss['score'] += 1
-        else:
-            st.error(f"Resposta Incorreta! A resposta correta é: {question['answer']}")
+    # Verifica se usuário selecionou resposta
+    if user_choice is None:
+        st.error("Por favor, selecione uma questão antes de avançar.")
+        return # Interrompe execução da função caso sem escolha
+
+    if user_choice.strip() == question['answer'].strip():
+        st.success("Resposta Correta!")
+        ss['score'] += 1
+    else:
+        st.error(f"Resposta Incorreta! A resposta correta é: {question['answer']}")
     ss['user_answers'].append(user_choice)
     ss['feedback'] = True
 
@@ -125,7 +135,8 @@ def mostrar_resultado():
 def gerenciar_questao():
     # if do processo de resolução da prova
     if ss['start'] and ss['current_question'] < total_de_questoes:
-        st.write(f"Progresso: {ss['current_question'] + 1} / {total_de_questoes}")
+        with col4:
+            st.write(f"Progresso: {ss['current_question'] + 1} / {total_de_questoes}")
         user_choice = mostrar_pergunta()
 
         #ss['user_choice'] = user_choice
