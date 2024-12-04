@@ -83,8 +83,10 @@ def update_session_state():
         st.write("# GAP.AI")
 
 
+col3, col4 = st.columns([1,1.25])
 # Inicializando botão
-st.button(label=ss.button_label[ss.counter], key='button_press', on_click=btn_click)
+with col3:
+    st.button(label=ss.button_label[ss.counter], key='button_press', on_click=btn_click)
 
 def mostrar_pergunta():
     current_question = ss['current_question']
@@ -129,7 +131,8 @@ def mostrar_resultado():
 def gerenciar_questao():
     # if do processo de resolução da prova
     if ss['start'] and ss['current_question'] < total_de_questoes:
-        st.write(f"Progresso: {ss['current_question'] + 1} / {total_de_questoes}")
+        with col4:
+            st.write(f"Progresso: {ss['current_question'] + 1} / {total_de_questoes}")
         user_choice = mostrar_pergunta()
 
         #ss['user_choice'] = user_choice
