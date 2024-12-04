@@ -10,16 +10,16 @@ scorecard_placeholder = st.empty()
 
 # Definição da quantidade questões
 questoes_por_topico = {
-    "Basic Syntax": 1,
-    "DataTypes, Variables": 1,
-    "Conditionals": 1,
-    "Functions": 0,
-    "Loops": 0,
-    "Exception Handling": 0,
-    "DataStructures": 0,
-    "OOP, Interfaces, Classes": 0,
-    "Packages": 0,
-    "Working With Files and APIs": 0
+    "Basic Syntax": 11,
+    "DataTypes, Variables": 11,
+    "Conditionals": 9,
+    "Functions": 11,
+    "Loops": 8,
+    "Exception Handling": 12,
+    "DataStructures": 6,
+    "OOP, Interfaces, Classes": 10,
+    "Packages": 12,
+    "Working With Files and APIs": 11
 }
 total_de_questoes = sum(questoes_por_topico.values())
 
@@ -113,10 +113,10 @@ def verificar_resposta(user_choice):
         return # Interrompe execução da função caso sem escolha
 
     if user_choice.strip() == question['answer'].strip():
-        st.success("Resposta Correta!")
+        st.success("Correto!")
         ss['score'] += 1
     else:
-        st.error(f"Resposta Incorreta! A resposta correta é: {question['answer']}")
+        st.error(f"Incorreto! Resposta correta: {question['answer']}")
     ss['user_answers'].append(user_choice)
     ss['feedback'] = True
 

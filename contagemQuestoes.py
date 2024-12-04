@@ -27,5 +27,5 @@ def contar_questoes(arquivo_json):
         print(f"  - {dificuldade.capitalize()}: {contagem}")
 
 # Exemplo de uso
-arquivo_json = 'perguntas.json'
+arquivo_json = 'perguntasT.json'
 contar_questoes(arquivo_json)

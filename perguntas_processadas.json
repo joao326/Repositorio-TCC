@@ -1,0 +1,1921 @@
+[
+    {
+        "question": "O que se refere ao conjunto de regras que definem as combina\u00e7\u00f5es de s\u00edmbolos que s\u00e3o consideradas programas corretamente estruturados em uma determinada linguagem?",
+        "answer": "Sintaxe",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Sem\u00e2ntica  ",
+            "2. Gram\u00e1tica  ",
+            "3. Protocolo  ",
+            "4. L\u00e9xico  "
+        ],
+        "topic": "Basic Syntax",
+        "options": [
+            "Sintaxe",
+            "L\u00e9xico",
+            "Gram\u00e1tica",
+            "Sem\u00e2ntica",
+            "Protocolo"
+        ]
+    },
+    {
+        "question": "Que tipo de linguagem \u00e9 Java?",
+        "answer": "orientada a objetos",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Funcional",
+            "2. Procedural",
+            "3. Linguagem de Marca\u00e7\u00e3o",
+            "4. Assembly"
+        ],
+        "topic": "Basic Syntax",
+        "options": [
+            "Linguagem de Marca\u00e7\u00e3o",
+            "Funcional",
+            "orientada a objetos",
+            "Assembly",
+            "Procedural"
+        ]
+    },
+    {
+        "question": "A sintaxe do Java \u00e9 influenciada por quais duas linguagens?",
+        "answer": "C e C++",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Python e Ruby  ",
+            "2. JavaScript e Perl  ",
+            "3. COBOL e Fortran  ",
+            "4. Swift e Kotlin  "
+        ],
+        "topic": "Basic Syntax",
+        "options": [
+            "COBOL e Fortran",
+            "Swift e Kotlin",
+            "C e C++",
+            "Python e Ruby",
+            "JavaScript e Perl"
+        ]
+    },
+    {
+        "question": "O que \u00e9 uma \u00fanica linha de c\u00f3digo que executa uma a\u00e7\u00e3o?",
+        "answer": "Instru\u00e7\u00f5es",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Express\u00f5es  ",
+            "2. Fun\u00e7\u00f5es  ",
+            "3. Declara\u00e7\u00f5es  ",
+            "4. Par\u00e2metros  "
+        ],
+        "topic": "Basic Syntax",
+        "options": [
+            "Par\u00e2metros",
+            "Express\u00f5es",
+            "Declara\u00e7\u00f5es",
+            "Fun\u00e7\u00f5es",
+            "Instru\u00e7\u00f5es"
+        ]
+    },
+    {
+        "question": "As instru\u00e7\u00f5es podem ser categorizadas em qu\u00ea?",
+        "answer": "express\u00f5es, declara\u00e7\u00f5es e instru\u00e7\u00f5es de controle de fluxo",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Opera\u00e7\u00f5es aritm\u00e9ticas, atribui\u00e7\u00f5es de vari\u00e1veis e tratamento de exce\u00e7\u00f5es",
+            "2. Chamadas de m\u00e9todos, loops e tipos de dados",
+            "3. Instru\u00e7\u00f5es de entrada, instru\u00e7\u00f5es de sa\u00edda e defini\u00e7\u00f5es de classes",
+            "4. Coment\u00e1rios, anota\u00e7\u00f5es e importa\u00e7\u00f5es de pacotes"
+        ],
+        "topic": "Basic Syntax",
+        "options": [
+            "Chamadas de m\u00e9todos, loops e tipos de dados",
+            "express\u00f5es, declara\u00e7\u00f5es e instru\u00e7\u00f5es de controle de fluxo",
+            "Opera\u00e7\u00f5es aritm\u00e9ticas, atribui\u00e7\u00f5es de vari\u00e1veis e tratamento de exce\u00e7\u00f5es",
+            "Instru\u00e7\u00f5es de entrada, instru\u00e7\u00f5es de sa\u00edda e defini\u00e7\u00f5es de classes",
+            "Coment\u00e1rios, anota\u00e7\u00f5es e importa\u00e7\u00f5es de pacotes"
+        ]
+    },
+    {
+        "question": "O que s\u00e3o combina\u00e7\u00f5es de vari\u00e1veis, operadores e chamadas de m\u00e9todos que avaliam um valor?",
+        "answer": "Express\u00f5es",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Instru\u00e7\u00f5es  ",
+            "2. Fun\u00e7\u00f5es  ",
+            "3. Comandos  ",
+            "4. Par\u00e2metros  "
+        ],
+        "topic": "Basic Syntax",
+        "options": [
+            "Comandos",
+            "Par\u00e2metros",
+            "Instru\u00e7\u00f5es",
+            "Fun\u00e7\u00f5es",
+            "Express\u00f5es"
+        ]
+    },
+    {
+        "question": "O que introduz novas vari\u00e1veis e especifica seus tipos?",
+        "answer": "Declara\u00e7\u00f5es",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Express\u00f5es  ",
+            "2. Instru\u00e7\u00f5es  ",
+            "3. Fun\u00e7\u00f5es  ",
+            "4. Construtores  "
+        ],
+        "topic": "Basic Syntax",
+        "options": [
+            "Instru\u00e7\u00f5es",
+            "Declara\u00e7\u00f5es",
+            "Construtores",
+            "Express\u00f5es",
+            "Fun\u00e7\u00f5es"
+        ]
+    },
+    {
+        "question": "O que inclui constru\u00e7\u00f5es como loops e instru\u00e7\u00f5es condicionais que controlam o fluxo de execu\u00e7\u00e3o em um programa?",
+        "answer": "Instru\u00e7\u00f5es de Controle de Fluxo",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Estruturas de Dados",
+            "2. Tratamento de Exce\u00e7\u00f5es",
+            "3. Regras de Sintaxe",
+            "4. Declara\u00e7\u00f5es de Vari\u00e1veis"
+        ],
+        "topic": "Basic Syntax",
+        "options": [
+            "Tratamento de Exce\u00e7\u00f5es",
+            "Instru\u00e7\u00f5es de Controle de Fluxo",
+            "Estruturas de Dados",
+            "Declara\u00e7\u00f5es de Vari\u00e1veis",
+            "Regras de Sintaxe"
+        ]
+    },
+    {
+        "question": "Quais s\u00e3o exemplos de Tipos de Refer\u00eancia em Java?",
+        "answer": "objetos e arrays",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Tipos de dados primitivos e enums  ",
+            "2. Strings e caracteres  ",
+            "3. Cole\u00e7\u00f5es e mapas  ",
+            "4. Interfaces e anota\u00e7\u00f5es  "
+        ],
+        "topic": "Basic Syntax",
+        "options": [
+            "Cole\u00e7\u00f5es e mapas",
+            "objetos e arrays",
+            "Interfaces e anota\u00e7\u00f5es",
+            "Strings e caracteres",
+            "Tipos de dados primitivos e enums"
+        ]
+    },
+    {
+        "question": "O que s\u00e3o locais de armazenamento nomeados para dados?",
+        "answer": "Vari\u00e1veis",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Constantes  ",
+            "2. Fun\u00e7\u00f5es  ",
+            "3. Tipos de dados  ",
+            "4. Express\u00f5es  "
+        ],
+        "topic": "Basic Syntax",
+        "options": [
+            "Tipos de dados",
+            "Constantes",
+            "Fun\u00e7\u00f5es",
+            "Express\u00f5es",
+            "Vari\u00e1veis"
+        ]
+    },
+    {
+        "question": "O que declarar uma vari\u00e1vel requer em Java?",
+        "answer": "especificar seu tipo seguido por seu nome",
+        "difficulty": "medium",
+        "distractors": [
+            "1. fornecer um valor inicial seguido por seu nome  ",
+            "2. definir seu escopo seguido por sua estrutura de dados  ",
+            "3. indicar sua visibilidade seguida por seu comprimento  ",
+            "4. declarar seu prop\u00f3sito seguido por seu valor padr\u00e3o  "
+        ],
+        "topic": "Basic Syntax",
+        "options": [
+            "indicar sua visibilidade seguida por seu comprimento",
+            "fornecer um valor inicial seguido por seu nome",
+            "especificar seu tipo seguido por seu nome",
+            "declarar seu prop\u00f3sito seguido por seu valor padr\u00e3o",
+            "definir seu escopo seguido por sua estrutura de dados"
+        ]
+    },
+    {
+        "question": "O que define a natureza dos dados que podem ser armazenados e manipulados dentro de um programa?",
+        "answer": "Tipos de dados",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Vari\u00e1veis",
+            "2. Estruturas de controle",
+            "3. Algoritmos",
+            "4. Express\u00f5es"
+        ],
+        "topic": "DataTypes, Variables",
+        "options": [
+            "Tipos de dados",
+            "Express\u00f5es",
+            "Estruturas de controle",
+            "Algoritmos",
+            "Vari\u00e1veis"
+        ]
+    },
+    {
+        "question": "Os tipos de dados em Java podem ser amplamente categorizados em dois grupos principais: tipos de dados primitivos e o qu\u00ea?",
+        "answer": "tipos de dados de refer\u00eancia",
+        "difficulty": "medium",
+        "distractors": [
+            "1. tipos de dados compostos  ",
+            "2. tipos de dados abstratos  ",
+            "3. tipos de dados din\u00e2micos  ",
+            "4. tipos de dados definidos pelo usu\u00e1rio"
+        ],
+        "topic": "DataTypes, Variables",
+        "options": [
+            "tipos de dados definidos pelo usu\u00e1rio",
+            "tipos de dados de refer\u00eancia",
+            "tipos de dados din\u00e2micos",
+            "tipos de dados compostos",
+            "tipos de dados abstratos"
+        ]
+    },
+    {
+        "question": "Quantos tipos de dados primitivos existem em Java?",
+        "answer": "oito",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Seis  ",
+            "2. Dez  ",
+            "3. Quatro  ",
+            "4. Doze  "
+        ],
+        "topic": "DataTypes, Variables",
+        "options": [
+            "oito",
+            "Seis",
+            "Quatro",
+            "Dez",
+            "Doze"
+        ]
+    },
+    {
+        "question": "Quantos bits tem um inteiro short?",
+        "answer": "16",
+        "difficulty": "easy",
+        "distractors": [
+            "1. 8",
+            "2. 32",
+            "3. 64",
+            "4. 12"
+        ],
+        "topic": "DataTypes, Variables",
+        "options": [
+            "16",
+            "",
+            "8",
+            "64",
+            ""
+        ]
+    },
+    {
+        "question": "Qual \u00e9 o tipo de inteiro mais comumente usado?",
+        "answer": "32",
+        "difficulty": "medium",
+        "distractors": [
+            "1. 16",
+            "2. 64",
+            "3. 8",
+            "4. 128"
+        ],
+        "topic": "DataTypes, Variables",
+        "options": [
+            "6",
+            "32",
+            "8",
+            "8",
+            "64"
+        ]
+    },
+    {
+        "question": "Qual tipo de ponto flutuante \u00e9 adequado para economizar mem\u00f3ria em grandes arrays de n\u00fameros de ponto flutuante?",
+        "answer": "ponto flutuante IEEE 754 de precis\u00e3o simples de 32 bits",
+        "difficulty": "hard",
+        "distractors": [
+            "1. ponto flutuante IEEE 754 de precis\u00e3o dupla de 64 bits  ",
+            "2. ponto flutuante IEEE 754 de meia precis\u00e3o de 16 bits  ",
+            "3. ponto flutuante IEEE 754 de precis\u00e3o qu\u00e1drupla de 128 bits  ",
+            "4. ponto flutuante decimal (128 bits)"
+        ],
+        "topic": "DataTypes, Variables",
+        "options": [
+            "ponto flutuante IEEE 754 de precis\u00e3o qu\u00e1drupla de 128 bits",
+            "ponto flutuante IEEE 754 de precis\u00e3o simples de 32 bits",
+            "ponto flutuante IEEE 754 de meia precis\u00e3o de 16 bits",
+            "ponto flutuante IEEE 754 de precis\u00e3o dupla de 64 bits",
+            "ponto flutuante decimal (128 bits)"
+        ]
+    },
+    {
+        "question": "Por que o ponto flutuante IEEE 754 de precis\u00e3o dupla \u00e9 preferido para valores decimais?",
+        "answer": "maior precis\u00e3o",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Usa menos mem\u00f3ria do que o ponto flutuante de precis\u00e3o simples.",
+            "2. \u00c9 mais compat\u00edvel com valores inteiros.",
+            "3. Permite opera\u00e7\u00f5es aritm\u00e9ticas mais r\u00e1pidas que a precis\u00e3o simples.",
+            "4. Elimina todos os erros de arredondamento completamente."
+        ],
+        "topic": "DataTypes, Variables",
+        "options": [
+            "\u00c9 mais compat\u00edvel com valores inteiros.",
+            "Permite opera\u00e7\u00f5es aritm\u00e9ticas mais r\u00e1pidas que a precis\u00e3o simples.",
+            "Elimina todos os erros de arredondamento completamente.",
+            "Usa menos mem\u00f3ria do que o ponto flutuante de precis\u00e3o simples.",
+            "maior precis\u00e3o"
+        ]
+    },
+    {
+        "question": "Quantos bits de Unicode tem um char?",
+        "answer": "16",
+        "difficulty": "easy",
+        "distractors": [
+            "1. 8",
+            "2. 32",
+            "3. 24",
+            "4. 12"
+        ],
+        "topic": "DataTypes, Variables",
+        "options": [
+            "",
+            "16",
+            "8",
+            "",
+            ""
+        ]
+    },
+    {
+        "question": "Quais s\u00e3o os dois valores que um boolean pode conter?",
+        "answer": "true ou false",
+        "difficulty": "easy",
+        "distractors": [
+            "1. sim ou n\u00e3o  ",
+            "2. ligado ou desligado  ",
+            "3. 1 ou 0  ",
+            "4. alto ou baixo"
+        ],
+        "topic": "DataTypes, Variables",
+        "options": [
+            "true ou false",
+            "ligado ou desligado",
+            "sim ou n\u00e3o",
+            "ou 0",
+            "alto ou baixo"
+        ]
+    },
+    {
+        "question": "O que \u00e9 uma sequ\u00eancia de caracteres tratada como um objeto em Java?",
+        "answer": "Strings",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Arrays",
+            "2. Chars",
+            "3. Textos",
+            "4. Buffers"
+        ],
+        "topic": "DataTypes, Variables",
+        "options": [
+            "Strings",
+            "Arrays",
+            "Textos",
+            "Buffers",
+            "Chars"
+        ]
+    },
+    {
+        "question": "O que pode encapsular dados e m\u00e9todos em Java?",
+        "answer": "Tipos de dados definidos pelo usu\u00e1rio",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Tipos de dados primitivos embutidos  ",
+            "2. Instru\u00e7\u00f5es de controle de fluxo  ",
+            "3. Mecanismos de tratamento de exce\u00e7\u00f5es  ",
+            "4. Classes da biblioteca padr\u00e3o"
+        ],
+        "topic": "DataTypes, Variables",
+        "options": [
+            "Instru\u00e7\u00f5es de controle de fluxo",
+            "Tipos de dados definidos pelo usu\u00e1rio",
+            "Classes da biblioteca padr\u00e3o",
+            "Mecanismos de tratamento de exce\u00e7\u00f5es",
+            "Tipos de dados primitivos embutidos"
+        ]
+    },
+    {
+        "question": "O que \u00e9 um conceito fundamental que permite aos desenvolvedores controlar o fluxo de execu\u00e7\u00e3o com base em crit\u00e9rios espec\u00edficos?",
+        "answer": "condicionais",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Loops  ",
+            "2. Vari\u00e1veis  ",
+            "3. Fun\u00e7\u00f5es  ",
+            "4. Exce\u00e7\u00f5es  "
+        ],
+        "topic": "Conditionals",
+        "options": [
+            "Loops",
+            "condicionais",
+            "Exce\u00e7\u00f5es",
+            "Fun\u00e7\u00f5es",
+            "Vari\u00e1veis"
+        ]
+    },
+    {
+        "question": "O que permite que o programa tome decis\u00f5es executando diferentes blocos de c\u00f3digo dependendo se certas condi\u00e7\u00f5es avaliam como verdadeiras ou falsas?",
+        "answer": "condicionais",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Loops  ",
+            "2. Vari\u00e1veis  ",
+            "3. Fun\u00e7\u00f5es  ",
+            "4. Exce\u00e7\u00f5es  "
+        ],
+        "topic": "Conditionals",
+        "options": [
+            "Vari\u00e1veis",
+            "condicionais",
+            "Exce\u00e7\u00f5es",
+            "Loops",
+            "Fun\u00e7\u00f5es"
+        ]
+    },
+    {
+        "question": "Para que os condicionais s\u00e3o essenciais em Java?",
+        "answer": "criar aplicativos din\u00e2micos e interativos",
+        "difficulty": "medium",
+        "distractors": [
+            "1. gerenciar aloca\u00e7\u00e3o de mem\u00f3ria de forma eficiente  ",
+            "2. estabelecer conex\u00f5es com bancos de dados sem problemas  ",
+            "3. otimizar o desempenho do c\u00f3digo durante a execu\u00e7\u00e3o  ",
+            "4. lidar efetivamente com a valida\u00e7\u00e3o de entrada do usu\u00e1rio  "
+        ],
+        "topic": "Conditionals",
+        "options": [
+            "lidar efetivamente com a valida\u00e7\u00e3o de entrada do usu\u00e1rio",
+            "otimizar o desempenho do c\u00f3digo durante a execu\u00e7\u00e3o",
+            "estabelecer conex\u00f5es com bancos de dados sem problemas",
+            "gerenciar aloca\u00e7\u00e3o de mem\u00f3ria de forma eficiente",
+            "criar aplicativos din\u00e2micos e interativos"
+        ]
+    },
+    {
+        "question": "O que \u00e9 uma express\u00e3o booleana que avalia como verdadeira ou falsa?",
+        "answer": "condi\u00e7\u00e3o",
+        "difficulty": "easy",
+        "distractors": [
+            "1. vari\u00e1vel",
+            "2. instru\u00e7\u00e3o",
+            "3. operador",
+            "4. loop"
+        ],
+        "topic": "Conditionals",
+        "options": [
+            "instru\u00e7\u00e3o",
+            "vari\u00e1vel",
+            "loop",
+            "operador",
+            "condi\u00e7\u00e3o"
+        ]
+    },
+    {
+        "question": "Qual \u00e9 a forma mais b\u00e1sica de um condicional?",
+        "answer": "Instru\u00e7\u00e3o if",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Instru\u00e7\u00e3o switch  ",
+            "2. Bloco try-catch  ",
+            "3. Loop for  ",
+            "4. Loop while  "
+        ],
+        "topic": "Conditionals",
+        "options": [
+            "Loop while",
+            "Instru\u00e7\u00e3o switch",
+            "Loop for",
+            "Bloco try-catch",
+            "Instru\u00e7\u00e3o if"
+        ]
+    },
+    {
+        "question": "O que pode complementar a instru\u00e7\u00e3o if?",
+        "answer": "cl\u00e1usula else opcional",
+        "difficulty": "easy",
+        "distractors": [
+            "1. uma instru\u00e7\u00e3o switch obrigat\u00f3ria  ",
+            "2. um loop while obrigat\u00f3rio  ",
+            "3. um loop for adicional  ",
+            "4. um bloco try-catch aninhado  "
+        ],
+        "topic": "Conditionals",
+        "options": [
+            "um bloco try-catch aninhado",
+            "um loop while obrigat\u00f3rio",
+            "cl\u00e1usula else opcional",
+            "um loop for adicional",
+            "uma instru\u00e7\u00e3o switch obrigat\u00f3ria"
+        ]
+    },
+    {
+        "question": "Qual \u00e9 uma forma mais estruturada de lidar com m\u00faltiplos valores discretos para uma \u00fanica vari\u00e1vel?",
+        "answer": "Instru\u00e7\u00e3o switch",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Instru\u00e7\u00e3o if-else  ",
+            "2. Operador Tern\u00e1rio  ",
+            "3. Loop for  ",
+            "4. ArrayList"
+        ],
+        "topic": "Conditionals",
+        "options": [
+            "Instru\u00e7\u00e3o if-else",
+            "ArrayList",
+            "Operador Tern\u00e1rio",
+            "Loop for",
+            "Instru\u00e7\u00e3o switch"
+        ]
+    },
+    {
+        "question": "O que permite a combina\u00e7\u00e3o de m\u00faltiplas condi\u00e7\u00f5es?",
+        "answer": "Operadores L\u00f3gicos",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Instru\u00e7\u00f5es Condicionais  ",
+            "2. Constru\u00e7\u00f5es de Looping  ",
+            "3. Estruturas de Dados  ",
+            "4. Tratamento de Exce\u00e7\u00f5es  "
+        ],
+        "topic": "Conditionals",
+        "options": [
+            "Estruturas de Dados",
+            "Tratamento de Exce\u00e7\u00f5es",
+            "Instru\u00e7\u00f5es Condicionais",
+            "Operadores L\u00f3gicos",
+            "Constru\u00e7\u00f5es de Looping"
+        ]
+    },
+    {
+        "question": "O que o operador AND (&&) retorna?",
+        "answer": "verdadeiro se ambas as condi\u00e7\u00f5es forem verdadeiras",
+        "difficulty": "easy",
+        "distractors": [
+            "1. verdadeiro se pelo menos uma condi\u00e7\u00e3o for verdadeira  ",
+            "2. falso se ambas as condi\u00e7\u00f5es forem falsas  ",
+            "3. verdadeiro se ambas as condi\u00e7\u00f5es forem falsas  ",
+            "4. falso se pelo menos uma condi\u00e7\u00e3o for verdadeira  "
+        ],
+        "topic": "Conditionals",
+        "options": [
+            "verdadeiro se pelo menos uma condi\u00e7\u00e3o for verdadeira",
+            "falso se ambas as condi\u00e7\u00f5es forem falsas",
+            "verdadeiro se ambas as condi\u00e7\u00f5es forem falsas",
+            "falso se pelo menos uma condi\u00e7\u00e3o for verdadeira",
+            "verdadeiro se ambas as condi\u00e7\u00f5es forem verdadeiras"
+        ]
+    },
+    {
+        "question": "As fun\u00e7\u00f5es tamb\u00e9m s\u00e3o conhecidas como o qu\u00ea em Java?",
+        "answer": "m\u00e9todos",
+        "difficulty": "easy",
+        "distractors": [
+            "1. procedimentos  ",
+            "2. opera\u00e7\u00f5es  ",
+            "3. rotinas  ",
+            "4. comandos  "
+        ],
+        "topic": "Functions",
+        "options": [
+            "opera\u00e7\u00f5es",
+            "rotinas",
+            "procedimentos",
+            "comandos",
+            "m\u00e9todos"
+        ]
+    },
+    {
+        "question": "O que as fun\u00e7\u00f5es permitem em Java?",
+        "answer": "reutiliza\u00e7\u00e3o de c\u00f3digo, melhorar a legibilidade, facilitar a depura\u00e7\u00e3o e suportar programa\u00e7\u00e3o modular",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Melhorar a efici\u00eancia de desempenho",
+            "2. Aumentar o consumo de mem\u00f3ria",
+            "3. Simplificar o tratamento de erros",
+            "4. Melhorar o design da interface do usu\u00e1rio"
+        ],
+        "topic": "Functions",
+        "options": [
+            "reutiliza\u00e7\u00e3o de c\u00f3digo, melhorar a legibilidade, facilitar a depura\u00e7\u00e3o e suportar programa\u00e7\u00e3o modular",
+            "Aumentar o consumo de mem\u00f3ria",
+            "Melhorar a efici\u00eancia de desempenho",
+            "Melhorar o design da interface do usu\u00e1rio",
+            "Simplificar o tratamento de erros"
+        ]
+    },
+    {
+        "question": "O que especifica o tipo de valor que a fun\u00e7\u00e3o retornar\u00e1 para o chamador?",
+        "answer": "Tipo de Retorno",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Assinatura da Fun\u00e7\u00e3o  ",
+            "2. Valor de Retorno  ",
+            "3. Tipo de Par\u00e2metro  ",
+            "4. Defini\u00e7\u00e3o da Fun\u00e7\u00e3o  "
+        ],
+        "topic": "Functions",
+        "options": [
+            "Assinatura da Fun\u00e7\u00e3o",
+            "Defini\u00e7\u00e3o da Fun\u00e7\u00e3o",
+            "Tipo de Retorno",
+            "Tipo de Par\u00e2metro",
+            "Valor de Retorno"
+        ]
+    },
+    {
+        "question": "Qual \u00e9 o tipo de retorno especificado se uma fun\u00e7\u00e3o n\u00e3o retornar um valor?",
+        "answer": "void",
+        "difficulty": "easy",
+        "distractors": [
+            "1. int  ",
+            "2. String  ",
+            "3. boolean  ",
+            "4. Object  "
+        ],
+        "topic": "Functions",
+        "options": [
+            "String",
+            "int",
+            "void",
+            "boolean",
+            "Object"
+        ]
+    },
+    {
+        "question": "O que deve ser descritivo da a\u00e7\u00e3o de um m\u00e9todo?",
+        "answer": "O nome da fun\u00e7\u00e3o",
+        "difficulty": "easy",
+        "distractors": [
+            "1. O tipo de retorno do m\u00e9todo  ",
+            "2. Os par\u00e2metros passados para o m\u00e9todo  ",
+            "3. O modificador de visibilidade do m\u00e9todo  ",
+            "4. A localiza\u00e7\u00e3o do m\u00e9todo dentro da classe  "
+        ],
+        "topic": "Functions",
+        "options": [
+            "A localiza\u00e7\u00e3o do m\u00e9todo dentro da classe",
+            "O nome da fun\u00e7\u00e3o",
+            "O tipo de retorno do m\u00e9todo",
+            "O modificador de visibilidade do m\u00e9todo",
+            "Os par\u00e2metros passados para o m\u00e9todo"
+        ]
+    },
+    {
+        "question": "Que tipo de nota\u00e7\u00e3o as conven\u00e7\u00f5es de nomenclatura Java sugerem para nomes de m\u00e9todos?",
+        "answer": "camelCase",
+        "difficulty": "easy",
+        "distractors": [
+            "1. snake_case  ",
+            "2. PascalCase  ",
+            "3. kebab-case  ",
+            "4. UpperCamelCase  "
+        ],
+        "topic": "Functions",
+        "options": [
+            "UpperCamelCase",
+            "kebab-case",
+            "PascalCase",
+            "snake_case",
+            "camelCase"
+        ]
+    },
+    {
+        "question": "O que s\u00e3o entradas para uma fun\u00e7\u00e3o, permitindo que ela receba dados durante a execu\u00e7\u00e3o?",
+        "answer": "Par\u00e2metros",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Argumentos  ",
+            "2. Vari\u00e1veis  ",
+            "3. Valores de retorno  ",
+            "4. Constantes  "
+        ],
+        "topic": "Functions",
+        "options": [
+            "Valores de retorno",
+            "Argumentos",
+            "Vari\u00e1veis",
+            "Constantes",
+            "Par\u00e2metros"
+        ]
+    },
+    {
+        "question": "Quantos par\u00e2metros um m\u00e9todo pode ter?",
+        "answer": "zero ou mais par\u00e2metros",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Exatamente um par\u00e2metro apenas  ",
+            "2. No m\u00e1ximo cinco par\u00e2metros  ",
+            "3. Pelo menos dois par\u00e2metros necess\u00e1rios  ",
+            "4. No m\u00ednimo tr\u00eas par\u00e2metros"
+        ],
+        "topic": "Functions",
+        "options": [
+            "Exatamente um par\u00e2metro apenas",
+            "No m\u00ednimo tr\u00eas par\u00e2metros",
+            "No m\u00e1ximo cinco par\u00e2metros",
+            "Pelo menos dois par\u00e2metros necess\u00e1rios",
+            "zero ou mais par\u00e2metros"
+        ]
+    },
+    {
+        "question": "O que encapsula o c\u00f3digo que define o comportamento de uma fun\u00e7\u00e3o?",
+        "answer": "Corpo do M\u00e9todo",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Declara\u00e7\u00e3o da Fun\u00e7\u00e3o",
+            "2. Estrutura de Controle",
+            "3. Instru\u00e7\u00e3o de Retorno",
+            "4. Lista de Par\u00e2metros"
+        ],
+        "topic": "Functions",
+        "options": [
+            "Instru\u00e7\u00e3o de Retorno",
+            "Declara\u00e7\u00e3o da Fun\u00e7\u00e3o",
+            "Estrutura de Controle",
+            "Corpo do M\u00e9todo",
+            "Lista de Par\u00e2metros"
+        ]
+    },
+    {
+        "question": "Qual \u00e9 um recurso poderoso em Java que permite que v\u00e1rios m\u00e9todos tenham o mesmo nome, mas listas de par\u00e2metros diferentes?",
+        "answer": "Sobrecarga de M\u00e9todos",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Sobrescrita de M\u00e9todos  ",
+            "2. Sobregrava\u00e7\u00e3o de M\u00e9todos  ",
+            "3. Sobrecarga de Fun\u00e7\u00f5es  ",
+            "4. M\u00e9todos Parametrizados"
+        ],
+        "topic": "Functions",
+        "options": [
+            "Sobrecarga de M\u00e9todos",
+            "M\u00e9todos Parametrizados",
+            "Sobregrava\u00e7\u00e3o de M\u00e9todos",
+            "Sobrecarga de Fun\u00e7\u00f5es",
+            "Sobrescrita de M\u00e9todos"
+        ]
+    },
+    {
+        "question": "O que controla a visibilidade dos m\u00e9todos em Java?",
+        "answer": "Modificadores de Acesso",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Sobrecarga de M\u00e9todos  ",
+            "2. Tratamento de Exce\u00e7\u00f5es  ",
+            "3. Hierarquias de Heran\u00e7a  ",
+            "4. Construtores de Classe  "
+        ],
+        "topic": "Functions",
+        "options": [
+            "Construtores de Classe",
+            "Hierarquias de Heran\u00e7a",
+            "Tratamento de Exce\u00e7\u00f5es",
+            "Sobrecarga de M\u00e9todos",
+            "Modificadores de Acesso"
+        ]
+    },
+    {
+        "question": "O que \u00e9 crucial para qualquer programador Java?",
+        "answer": "Compreender loops",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Dominar o uso de anota\u00e7\u00f5es Java",
+            "2. Familiaridade com o mecanismo de coleta de lixo do Java",
+            "3. Conhecimento do tratamento de exce\u00e7\u00f5es em Java",
+            "4. Profici\u00eancia no uso de bibliotecas e frameworks Java"
+        ],
+        "topic": "Loops",
+        "options": [
+            "Familiaridade com o mecanismo de coleta de lixo do Java",
+            "Conhecimento do tratamento de exce\u00e7\u00f5es em Java",
+            "Profici\u00eancia no uso de bibliotecas e frameworks Java",
+            "Dominar o uso de anota\u00e7\u00f5es Java",
+            "Compreender loops"
+        ]
+    },
+    {
+        "question": "Qual \u00e9 a import\u00e2ncia dos loops em Java?",
+        "answer": "Os loops s\u00e3o essenciais para automatizar tarefas repetitivas e controlar o fluxo de um programa.",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Os loops fornecem uma maneira de definir tipos de dados e refor\u00e7ar a seguran\u00e7a de tipo em programas Java.",
+            "2. Os loops s\u00e3o usados principalmente para criar interfaces gr\u00e1ficas de usu\u00e1rio em aplicativos Java.",
+            "3. Os loops ajudam a gerenciar a aloca\u00e7\u00e3o de mem\u00f3ria e a coleta de lixo em Java.",
+            "4. Os loops melhoram a seguran\u00e7a de aplicativos Java, evitando acesso n\u00e3o autorizado a dados."
+        ],
+        "topic": "Loops",
+        "options": [
+            "Os loops s\u00e3o essenciais para automatizar tarefas repetitivas e controlar o fluxo de um programa.",
+            "Os loops ajudam a gerenciar a aloca\u00e7\u00e3o de mem\u00f3ria e a coleta de lixo em Java.",
+            "Os loops s\u00e3o usados principalmente para criar interfaces gr\u00e1ficas de usu\u00e1rio em aplicativos Java.",
+            "Os loops fornecem uma maneira de definir tipos de dados e refor\u00e7ar a seguran\u00e7a de tipo em programas Java.",
+            "Os loops melhoram a seguran\u00e7a de aplicativos Java, evitando acesso n\u00e3o autorizado a dados."
+        ]
+    },
+    {
+        "question": "O que evita redund\u00e2ncia no c\u00f3digo?",
+        "answer": "Automatizar tarefas repetitivas",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Usar algoritmos complexos para processamento de dados  ",
+            "2. Implementar m\u00e9todos manuais de verifica\u00e7\u00e3o de erros  ",
+            "3. Criar m\u00faltiplas c\u00f3pias do mesmo c\u00f3digo  ",
+            "4. Escrever documenta\u00e7\u00e3o extensa para cada fun\u00e7\u00e3o  "
+        ],
+        "topic": "Loops",
+        "options": [
+            "Criar m\u00faltiplas c\u00f3pias do mesmo c\u00f3digo",
+            "Usar algoritmos complexos para processamento de dados",
+            "Automatizar tarefas repetitivas",
+            "Implementar m\u00e9todos manuais de verifica\u00e7\u00e3o de erros",
+            "Escrever documenta\u00e7\u00e3o extensa para cada fun\u00e7\u00e3o"
+        ]
+    },
+    {
+        "question": "Que tipo de loop \u00e9 ideal para cen\u00e1rios onde o n\u00famero de itera\u00e7\u00f5es \u00e9 conhecido de antem\u00e3o?",
+        "answer": "Loop For",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Loop While  ",
+            "2. Loop Do-While  ",
+            "3. Loop Infinito  ",
+            "4. Loop Recursivo  "
+        ],
+        "topic": "Loops",
+        "options": [
+            "Loop Infinito",
+            "Loop Recursivo",
+            "Loop Do-While",
+            "Loop For",
+            "Loop While"
+        ]
+    },
+    {
+        "question": "Quais s\u00e3o os tr\u00eas componentes do Loop For?",
+        "answer": "inicializa\u00e7\u00e3o, condi\u00e7\u00e3o e incremento/decremento",
+        "difficulty": "medium",
+        "distractors": [
+            "1. declara\u00e7\u00e3o, execu\u00e7\u00e3o e itera\u00e7\u00e3o",
+            "2. configura\u00e7\u00e3o, valida\u00e7\u00e3o e modifica\u00e7\u00e3o",
+            "3. in\u00edcio, verifica\u00e7\u00e3o e atualiza\u00e7\u00e3o",
+            "4. defini\u00e7\u00e3o, teste e conclus\u00e3o"
+        ],
+        "topic": "Loops",
+        "options": [
+            "declara\u00e7\u00e3o, execu\u00e7\u00e3o e itera\u00e7\u00e3o",
+            "defini\u00e7\u00e3o, teste e conclus\u00e3o",
+            "inicializa\u00e7\u00e3o, condi\u00e7\u00e3o e incremento/decremento",
+            "configura\u00e7\u00e3o, valida\u00e7\u00e3o e modifica\u00e7\u00e3o",
+            "in\u00edcio, verifica\u00e7\u00e3o e atualiza\u00e7\u00e3o"
+        ]
+    },
+    {
+        "question": "Qual \u00e9 o uso mais comum de um loop?",
+        "answer": "iterar sobre arrays ou cole\u00e7\u00f5es",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Executar um bloco de c\u00f3digo apenas uma vez com base em uma condi\u00e7\u00e3o espec\u00edfica.",
+            "2. Definir uma fun\u00e7\u00e3o que n\u00e3o retorna nenhum valor.",
+            "3. Criar uma vari\u00e1vel est\u00e1tica dentro de uma classe.",
+            "4. Lidar com exce\u00e7\u00f5es durante a execu\u00e7\u00e3o em tempo de execu\u00e7\u00e3o."
+        ],
+        "topic": "Loops",
+        "options": [
+            "Executar um bloco de c\u00f3digo apenas uma vez com base em uma condi\u00e7\u00e3o espec\u00edfica.",
+            "Criar uma vari\u00e1vel est\u00e1tica dentro de uma classe.",
+            "iterar sobre arrays ou cole\u00e7\u00f5es",
+            "Definir uma fun\u00e7\u00e3o que n\u00e3o retorna nenhum valor.",
+            "Lidar com exce\u00e7\u00f5es durante a execu\u00e7\u00e3o em tempo de execu\u00e7\u00e3o."
+        ]
+    },
+    {
+        "question": "O que \u00e9 usado quando a contagem de itera\u00e7\u00f5es n\u00e3o \u00e9 predeterminada?",
+        "answer": "Loop While",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Loop For  ",
+            "2. Loop Do-While  ",
+            "3. Loop For Aprimorado  ",
+            "4. Fun\u00e7\u00e3o Recursiva  "
+        ],
+        "topic": "Loops",
+        "options": [
+            "Loop For",
+            "Loop Do-While",
+            "Loop For Aprimorado",
+            "Fun\u00e7\u00e3o Recursiva",
+            "Loop While"
+        ]
+    },
+    {
+        "question": "Que tipo de loop garante que o bloco de c\u00f3digo seja executado pelo menos uma vez?",
+        "answer": "Loop Do-While",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Loop For",
+            "2. Loop While",
+            "3. Loop For Aprimorado",
+            "4. Loop Infinito"
+        ],
+        "topic": "Loops",
+        "options": [
+            "Loop While",
+            "Loop For Aprimorado",
+            "Loop For",
+            "Loop Do-While",
+            "Loop Infinito"
+        ]
+    },
+    {
+        "question": "Qual \u00e9 um aspecto fundamental da programa\u00e7\u00e3o Java que permite aos desenvolvedores gerenciar erros e eventos excepcionais que podem ocorrer durante a execu\u00e7\u00e3o de um programa?",
+        "answer": "Tratamento de exce\u00e7\u00f5es",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Gerenciamento de mem\u00f3ria  ",
+            "2. Multithreading  ",
+            "3. Encapsulamento de dados  ",
+            "4. Coleta de lixo  "
+        ],
+        "topic": "Exception Handling",
+        "options": [
+            "Multithreading",
+            "Tratamento de exce\u00e7\u00f5es",
+            "Gerenciamento de mem\u00f3ria",
+            "Encapsulamento de dados",
+            "Coleta de lixo"
+        ]
+    },
+    {
+        "question": "A que se refere uma exce\u00e7\u00e3o em Java?",
+        "answer": "um evento inesperado que interrompe o fluxo normal das instru\u00e7\u00f5es do programa",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Um conjunto predefinido de m\u00e9todos que manipulam opera\u00e7\u00f5es de entrada e sa\u00edda do programa.",
+            "2. Um tipo espec\u00edfico de estrutura de dados usada para armazenar cole\u00e7\u00f5es de objetos.",
+            "3. Um comando usado para terminar um programa antes de completar a execu\u00e7\u00e3o.",
+            "4. Um recurso que permite a aloca\u00e7\u00e3o e desaloca\u00e7\u00e3o autom\u00e1tica de mem\u00f3ria."
+        ],
+        "topic": "Exception Handling",
+        "options": [
+            "Um tipo espec\u00edfico de estrutura de dados usada para armazenar cole\u00e7\u00f5es de objetos.",
+            "Um recurso que permite a aloca\u00e7\u00e3o e desaloca\u00e7\u00e3o autom\u00e1tica de mem\u00f3ria.",
+            "Um comando usado para terminar um programa antes de completar a execu\u00e7\u00e3o.",
+            "Um conjunto predefinido de m\u00e9todos que manipulam opera\u00e7\u00f5es de entrada e sa\u00edda do programa.",
+            "um evento inesperado que interrompe o fluxo normal das instru\u00e7\u00f5es do programa"
+        ]
+    },
+    {
+        "question": "O que \u00e9 crucial para criar aplicativos robustos que podem lidar graciosamente com erros sem travar ou produzir resultados incorretos?",
+        "answer": "Tratamento efetivo de exce\u00e7\u00f5es",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Valida\u00e7\u00e3o abrangente de entrada do usu\u00e1rio  ",
+            "2. Otimiza\u00e7\u00e3o do desempenho do c\u00f3digo  ",
+            "3. Implementa\u00e7\u00e3o de t\u00e9cnicas de multi-threading  ",
+            "4. Utiliza\u00e7\u00e3o de padr\u00f5es de design para escalabilidade"
+        ],
+        "topic": "Exception Handling",
+        "options": [
+            "Tratamento efetivo de exce\u00e7\u00f5es",
+            "Otimiza\u00e7\u00e3o do desempenho do c\u00f3digo",
+            "Implementa\u00e7\u00e3o de t\u00e9cnicas de multi-threading",
+            "Valida\u00e7\u00e3o abrangente de entrada do usu\u00e1rio",
+            "Utiliza\u00e7\u00e3o de padr\u00f5es de design para escalabilidade"
+        ]
+    },
+    {
+        "question": "O que o tratamento efetivo de exce\u00e7\u00f5es melhora?",
+        "answer": "confiabilidade, legibilidade e manutenibilidade do programa",
+        "difficulty": "medium",
+        "distractors": [
+            "1. velocidade, efici\u00eancia e desempenho do programa",
+            "2. design da interface do usu\u00e1rio, est\u00e9tica e funcionalidade",
+            "3. complexidade do c\u00f3digo, tamanho e tempo de execu\u00e7\u00e3o",
+            "4. armazenamento de dados, recupera\u00e7\u00e3o e criptografia"
+        ],
+        "topic": "Exception Handling",
+        "options": [
+            "confiabilidade, legibilidade e manutenibilidade do programa",
+            "complexidade do c\u00f3digo, tamanho e tempo de execu\u00e7\u00e3o",
+            "velocidade, efici\u00eancia e desempenho do programa",
+            "design da interface do usu\u00e1rio, est\u00e9tica e funcionalidade",
+            "armazenamento de dados, recupera\u00e7\u00e3o e criptografia"
+        ]
+    },
+    {
+        "question": "As exce\u00e7\u00f5es s\u00e3o representadas como o qu\u00ea em Java?",
+        "answer": "objetos",
+        "difficulty": "easy",
+        "distractors": [
+            "1. inteiros  ",
+            "2. strings  ",
+            "3. arrays  ",
+            "4. interfaces  "
+        ],
+        "topic": "Exception Handling",
+        "options": [
+            "arrays",
+            "objetos",
+            "inteiros",
+            "interfaces",
+            "strings"
+        ]
+    },
+    {
+        "question": "Como o compilador Java lida com exce\u00e7\u00f5es verificadas?",
+        "answer": "capturando-as ou declarando-as na assinatura do m\u00e9todo",
+        "difficulty": "medium",
+        "distractors": [
+            "1. ignorando-as e permitindo que o programa execute sem interrup\u00e7\u00e3o  ",
+            "2. convertendo-as automaticamente em exce\u00e7\u00f5es n\u00e3o verificadas  ",
+            "3. registrando-as em um arquivo para revis\u00e3o posterior  ",
+            "4. lan\u00e7ando-as em tempo de execu\u00e7\u00e3o sem quaisquer verifica\u00e7\u00f5es de compila\u00e7\u00e3o  "
+        ],
+        "topic": "Exception Handling",
+        "options": [
+            "lan\u00e7ando-as em tempo de execu\u00e7\u00e3o sem quaisquer verifica\u00e7\u00f5es de compila\u00e7\u00e3o",
+            "convertendo-as automaticamente em exce\u00e7\u00f5es n\u00e3o verificadas",
+            "registrando-as em um arquivo para revis\u00e3o posterior",
+            "capturando-as ou declarando-as na assinatura do m\u00e9todo",
+            "ignorando-as e permitindo que o programa execute sem interrup\u00e7\u00e3o"
+        ]
+    },
+    {
+        "question": "Qual \u00e9 uma exce\u00e7\u00e3o verificada comum?",
+        "answer": "IOException",
+        "difficulty": "easy",
+        "distractors": [
+            "1. SQLException  ",
+            "2. RuntimeException  ",
+            "3. NullPointerException  ",
+            "4. ClassNotFoundException  "
+        ],
+        "topic": "Exception Handling",
+        "options": [
+            "ClassNotFoundException",
+            "SQLException",
+            "RuntimeException",
+            "IOException",
+            "NullPointerException"
+        ]
+    },
+    {
+        "question": "Que tipo de exce\u00e7\u00f5es n\u00e3o s\u00e3o verificadas em tempo de compila\u00e7\u00e3o, mas s\u00e3o verificadas durante a execu\u00e7\u00e3o do programa?",
+        "answer": "Exce\u00e7\u00f5es N\u00e3o Verificadas",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Exce\u00e7\u00f5es de Tempo de Execu\u00e7\u00e3o  ",
+            "2. Erros de Sintaxe  ",
+            "3. Exce\u00e7\u00f5es Verificadas  ",
+            "4. Erros L\u00f3gicos  "
+        ],
+        "topic": "Exception Handling",
+        "options": [
+            "Erros L\u00f3gicos",
+            "Erros de Sintaxe",
+            "Exce\u00e7\u00f5es N\u00e3o Verificadas",
+            "Exce\u00e7\u00f5es Verificadas",
+            "Exce\u00e7\u00f5es de Tempo de Execu\u00e7\u00e3o"
+        ]
+    },
+    {
+        "question": "Qual \u00e9 um exemplo de uma exce\u00e7\u00e3o que n\u00e3o \u00e9 verificada em tempo de compila\u00e7\u00e3o, mas \u00e9 verificada durante a execu\u00e7\u00e3o de um programa?",
+        "answer": "NullPointerException",
+        "difficulty": "medium",
+        "distractors": [
+            "1. ArithmeticException  ",
+            "2. ClassNotFoundException  ",
+            "3. IOException  ",
+            "4. FileNotFoundException  "
+        ],
+        "topic": "Exception Handling",
+        "options": [
+            "NullPointerException",
+            "ClassNotFoundException",
+            "FileNotFoundException",
+            "ArithmeticException",
+            "IOException"
+        ]
+    },
+    {
+        "question": "As exce\u00e7\u00f5es n\u00e3o verificadas estendem qual classe?",
+        "answer": "RuntimeException",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Error",
+            "2. Exception",
+            "3. Throwable",
+            "4. CheckedException"
+        ],
+        "topic": "Exception Handling",
+        "options": [
+            "RuntimeException",
+            "Exception",
+            "Error",
+            "Throwable",
+            "CheckedException"
+        ]
+    },
+    {
+        "question": "O que representa um erro que um aplicativo t\u00edpico n\u00e3o deve tentar capturar?",
+        "answer": "problemas s\u00e9rios",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Avisos menores  ",
+            "2. Erros de entrada do usu\u00e1rio  ",
+            "3. Problemas tempor\u00e1rios de rede  ",
+            "4. Falhas na aloca\u00e7\u00e3o de recursos  "
+        ],
+        "topic": "Exception Handling",
+        "options": [
+            "Falhas na aloca\u00e7\u00e3o de recursos",
+            "Problemas tempor\u00e1rios de rede",
+            "Erros de entrada do usu\u00e1rio",
+            "problemas s\u00e9rios",
+            "Avisos menores"
+        ]
+    },
+    {
+        "question": "Qual \u00e9 o mecanismo principal para lidar com exce\u00e7\u00f5es em Java?",
+        "answer": "Bloco Try-Catch",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Classe de Manipula\u00e7\u00e3o de Erros",
+            "2. Interface de Tratamento de Exce\u00e7\u00f5es",
+            "3. Instru\u00e7\u00e3o de Asser\u00e7\u00e3o",
+            "4. Cl\u00e1usula Finally"
+        ],
+        "topic": "Exception Handling",
+        "options": [
+            "Cl\u00e1usula Finally",
+            "Instru\u00e7\u00e3o de Asser\u00e7\u00e3o",
+            "Bloco Try-Catch",
+            "Classe de Manipula\u00e7\u00e3o de Erros",
+            "Interface de Tratamento de Exce\u00e7\u00f5es"
+        ]
+    },
+    {
+        "question": "O que s\u00e3o conceitos fundamentais em programa\u00e7\u00e3o que permitem a organiza\u00e7\u00e3o, gerenciamento e armazenamento de dados de forma eficiente?",
+        "answer": "Estruturas de dados",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Instru\u00e7\u00f5es de controle de fluxo  ",
+            "2. Princ\u00edpios de orienta\u00e7\u00e3o a objetos  ",
+            "3. Design de algoritmos  ",
+            "4. Regras de sintaxe"
+        ],
+        "topic": "DataStructures",
+        "options": [
+            "Design de algoritmos",
+            "Regras de sintaxe",
+            "Princ\u00edpios de orienta\u00e7\u00e3o a objetos",
+            "Estruturas de dados",
+            "Instru\u00e7\u00f5es de controle de fluxo"
+        ]
+    },
+    {
+        "question": "O que \u00e9 uma estrutura de dados?",
+        "answer": "formato especializado",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Um paradigma de programa\u00e7\u00e3o usado para definir algoritmos",
+            "2. Uma cole\u00e7\u00e3o de vari\u00e1veis agrupadas por nome",
+            "3. Um m\u00e9todo para otimizar a velocidade de execu\u00e7\u00e3o do c\u00f3digo",
+            "4. Uma biblioteca de fun\u00e7\u00f5es embutidas para manipula\u00e7\u00e3o de dados"
+        ],
+        "topic": "DataStructures",
+        "options": [
+            "Um m\u00e9todo para otimizar a velocidade de execu\u00e7\u00e3o do c\u00f3digo",
+            "Uma biblioteca de fun\u00e7\u00f5es embutidas para manipula\u00e7\u00e3o de dados",
+            "Uma cole\u00e7\u00e3o de vari\u00e1veis agrupadas por nome",
+            "formato especializado",
+            "Um paradigma de programa\u00e7\u00e3o usado para definir algoritmos"
+        ]
+    },
+    {
+        "question": "O que \u00e9 complexidade de espa\u00e7o?",
+        "answer": "quanto de mem\u00f3ria \u00e9 necess\u00e1ria",
+        "difficulty": "medium",
+        "distractors": [
+            "1. A quantidade de tempo que um algoritmo leva para executar  ",
+            "2. O n\u00famero total de linhas de c\u00f3digo em um programa  ",
+            "3. O n\u00famero de valores de entrada que um algoritmo pode processar  ",
+            "4. O n\u00edvel de otimiza\u00e7\u00e3o alcan\u00e7ado em uma base de c\u00f3digo  "
+        ],
+        "topic": "DataStructures",
+        "options": [
+            "quanto de mem\u00f3ria \u00e9 necess\u00e1ria",
+            "O n\u00edvel de otimiza\u00e7\u00e3o alcan\u00e7ado em uma base de c\u00f3digo",
+            "O n\u00famero de valores de entrada que um algoritmo pode processar",
+            "O n\u00famero total de linhas de c\u00f3digo em um programa",
+            "A quantidade de tempo que um algoritmo leva para executar"
+        ]
+    },
+    {
+        "question": "Qual \u00e9 uma estrutura de dados fundamental que armazena uma cole\u00e7\u00e3o sequencial de tamanho fixo de elementos do mesmo tipo?",
+        "answer": "Arrays",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Listas Ligadas  ",
+            "2. Tabelas Hash  ",
+            "3. Pilhas  ",
+            "4. Filas  "
+        ],
+        "topic": "DataStructures",
+        "options": [
+            "Pilhas",
+            "Arrays",
+            "Listas Ligadas",
+            "Filas",
+            "Tabelas Hash"
+        ]
+    },
+    {
+        "question": "O que a interface List do Java permite para redimensionamento din\u00e2mico e fornece m\u00e9todos para inserir, excluir e acessar elementos?",
+        "answer": "Listas",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Arrays",
+            "2. Conjuntos",
+            "3. Mapas",
+            "4. Filas"
+        ],
+        "topic": "DataStructures",
+        "options": [
+            "Filas",
+            "Listas",
+            "Mapas",
+            "Arrays",
+            "Conjuntos"
+        ]
+    },
+    {
+        "question": "O que \u00e9 essencial quando o n\u00famero de elementos n\u00e3o \u00e9 conhecido antecipadamente ou pode mudar com frequ\u00eancia?",
+        "answer": "Listas",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Arrays",
+            "2. HashMaps",
+            "3. Conjuntos",
+            "4. Filas"
+        ],
+        "topic": "DataStructures",
+        "options": [
+            "Listas",
+            "HashMaps",
+            "Filas",
+            "Arrays",
+            "Conjuntos"
+        ]
+    },
+    {
+        "question": "Qual \u00e9 o paradigma de programa\u00e7\u00e3o fundamental em Java que enfatiza o uso de objetos para representar dados e m\u00e9todos?",
+        "answer": "Programa\u00e7\u00e3o Orientada a Objetos",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Programa\u00e7\u00e3o Funcional  ",
+            "2. Programa\u00e7\u00e3o Procedural  ",
+            "3. Programa\u00e7\u00e3o Declarativa  ",
+            "4. Programa\u00e7\u00e3o Orientada a Eventos  "
+        ],
+        "topic": "OOP, Interfaces, Classes",
+        "options": [
+            "Programa\u00e7\u00e3o Orientada a Objetos",
+            "Programa\u00e7\u00e3o Orientada a Eventos",
+            "Programa\u00e7\u00e3o Funcional",
+            "Programa\u00e7\u00e3o Declarativa",
+            "Programa\u00e7\u00e3o Procedural"
+        ]
+    },
+    {
+        "question": "O que a POO fornece que permite aos desenvolvedores criar software escal\u00e1vel e de f\u00e1cil manuten\u00e7\u00e3o?",
+        "answer": "uma estrutura modular clara",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Melhor desempenho atrav\u00e9s de tempos de execu\u00e7\u00e3o mais r\u00e1pidos  ",
+            "2. Recursos de seguran\u00e7a aprimorados para prote\u00e7\u00e3o de dados  ",
+            "3. Codifica\u00e7\u00e3o simplificada com menos linhas de c\u00f3digo necess\u00e1rias  ",
+            "4. Maior compatibilidade com todas as linguagens de programa\u00e7\u00e3o"
+        ],
+        "topic": "OOP, Interfaces, Classes",
+        "options": [
+            "Recursos de seguran\u00e7a aprimorados para prote\u00e7\u00e3o de dados",
+            "Melhor desempenho atrav\u00e9s de tempos de execu\u00e7\u00e3o mais r\u00e1pidos",
+            "uma estrutura modular clara",
+            "Codifica\u00e7\u00e3o simplificada com menos linhas de c\u00f3digo necess\u00e1rias",
+            "Maior compatibilidade com todas as linguagens de programa\u00e7\u00e3o"
+        ]
+    },
+    {
+        "question": "Quais dois construtos-chave desempenham um papel fundamental em como projetamos e implementamos nossas aplica\u00e7\u00f5es?",
+        "answer": "classes e interfaces",
+        "difficulty": "medium",
+        "distractors": [
+            "1. m\u00e9todos e vari\u00e1veis  ",
+            "2. arrays e loops  ",
+            "3. objetos e pacotes  ",
+            "4. threads e exce\u00e7\u00f5es  "
+        ],
+        "topic": "OOP, Interfaces, Classes",
+        "options": [
+            "threads e exce\u00e7\u00f5es",
+            "m\u00e9todos e vari\u00e1veis",
+            "classes e interfaces",
+            "objetos e pacotes",
+            "arrays e loops"
+        ]
+    },
+    {
+        "question": "O que classes e interfaces fazem em Java?",
+        "answer": "facilitam a reutiliza\u00e7\u00e3o de c\u00f3digo, melhoram a legibilidade e simplificam sistemas complexos",
+        "difficulty": "medium",
+        "distractors": [
+            "1. controlam aloca\u00e7\u00e3o de mem\u00f3ria, melhoram a velocidade de execu\u00e7\u00e3o e gerenciam sincroniza\u00e7\u00e3o de threads  ",
+            "2. refor\u00e7am protocolos de seguran\u00e7a, lidam com conex\u00f5es de banco de dados e otimizam o design da interface do usu\u00e1rio  ",
+            "3. definem tipos de dados, criam elementos gr\u00e1ficos e gerenciam comunica\u00e7\u00e3o de rede  ",
+            "4. implementam criptografia de dados, suportam processamento em tempo real e automatizam procedimentos de teste  "
+        ],
+        "topic": "OOP, Interfaces, Classes",
+        "options": [
+            "facilitam a reutiliza\u00e7\u00e3o de c\u00f3digo, melhoram a legibilidade e simplificam sistemas complexos",
+            "refor\u00e7am protocolos de seguran\u00e7a, lidam com conex\u00f5es de banco de dados e otimizam o design da interface do usu\u00e1rio",
+            "definem tipos de dados, criam elementos gr\u00e1ficos e gerenciam comunica\u00e7\u00e3o de rede",
+            "controlam aloca\u00e7\u00e3o de mem\u00f3ria, melhoram a velocidade de execu\u00e7\u00e3o e gerenciam sincroniza\u00e7\u00e3o de threads",
+            "implementam criptografia de dados, suportam processamento em tempo real e automatizam procedimentos de teste"
+        ]
+    },
+    {
+        "question": "Qual princ\u00edpio envolve agrupar os dados (atributos) e m\u00e9todos (fun\u00e7\u00f5es) em uma \u00fanica unidade conhecida como objeto?",
+        "answer": "Encapsulamento",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Heran\u00e7a  ",
+            "2. Polimorfismo  ",
+            "3. Abstra\u00e7\u00e3o  ",
+            "4. Composi\u00e7\u00e3o  "
+        ],
+        "topic": "OOP, Interfaces, Classes",
+        "options": [
+            "Encapsulamento",
+            "Composi\u00e7\u00e3o",
+            "Heran\u00e7a",
+            "Abstra\u00e7\u00e3o",
+            "Polimorfismo"
+        ]
+    },
+    {
+        "question": "O que ajuda a proteger os dados restringindo o acesso direto a eles?",
+        "answer": "Encapsulamento",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Heran\u00e7a  ",
+            "2. Polimorfismo  ",
+            "3. Abstra\u00e7\u00e3o  ",
+            "4. Composi\u00e7\u00e3o  "
+        ],
+        "topic": "OOP, Interfaces, Classes",
+        "options": [
+            "Polimorfismo",
+            "Abstra\u00e7\u00e3o",
+            "Encapsulamento",
+            "Composi\u00e7\u00e3o",
+            "Heran\u00e7a"
+        ]
+    },
+    {
+        "question": "Qual princ\u00edpio permite que objetos de diferentes classes sejam tratados como objetos de uma superclasse comum?",
+        "answer": "Polimorfismo",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Encapsulamento  ",
+            "2. Heran\u00e7a  ",
+            "3. Abstra\u00e7\u00e3o  ",
+            "4. Composi\u00e7\u00e3o  "
+        ],
+        "topic": "OOP, Interfaces, Classes",
+        "options": [
+            "Composi\u00e7\u00e3o",
+            "Heran\u00e7a",
+            "Polimorfismo",
+            "Abstra\u00e7\u00e3o",
+            "Encapsulamento"
+        ]
+    },
+    {
+        "question": "O que simplifica sistemas complexos expondo apenas as partes necess\u00e1rias e ocultando os detalhes de implementa\u00e7\u00e3o?",
+        "answer": "Abstra\u00e7\u00e3o",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Encapsulamento  ",
+            "2. Heran\u00e7a  ",
+            "3. Polimorfismo  ",
+            "4. Modularidade  "
+        ],
+        "topic": "OOP, Interfaces, Classes",
+        "options": [
+            "Abstra\u00e7\u00e3o",
+            "Heran\u00e7a",
+            "Polimorfismo",
+            "Modularidade",
+            "Encapsulamento"
+        ]
+    },
+    {
+        "question": "O que define m\u00e9todos que devem ser implementados por subclasses ou classes que os implementam?",
+        "answer": "classes abstratas e interfaces",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Classes concretas e enums  ",
+            "2. Classes est\u00e1ticas e classes aninhadas  ",
+            "3. Classes finais e classes utilit\u00e1rias  ",
+            "4. Classes an\u00f4nimas e express\u00f5es lambda  "
+        ],
+        "topic": "OOP, Interfaces, Classes",
+        "options": [
+            "classes abstratas e interfaces",
+            "Classes concretas e enums",
+            "Classes an\u00f4nimas e express\u00f5es lambda",
+            "Classes finais e classes utilit\u00e1rias",
+            "Classes est\u00e1ticas e classes aninhadas"
+        ]
+    },
+    {
+        "question": "O que \u00e9 uma classe em Java?",
+        "answer": "modelo",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Um m\u00e9todo para armazenamento de dados  ",
+            "2. Um tipo de vari\u00e1vel  ",
+            "3. Uma estrutura de controle  ",
+            "4. Uma defini\u00e7\u00e3o de interface  "
+        ],
+        "topic": "OOP, Interfaces, Classes",
+        "options": [
+            "modelo",
+            "Um m\u00e9todo para armazenamento de dados",
+            "Uma estrutura de controle",
+            "Um tipo de vari\u00e1vel",
+            "Uma defini\u00e7\u00e3o de interface"
+        ]
+    },
+    {
+        "question": "O que \u00e9 um pacote em Java?",
+        "answer": "um namespace",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Uma estrutura de dados para armazenar inst\u00e2ncias de classe  ",
+            "2. Um m\u00e9todo para gerenciar aloca\u00e7\u00e3o de mem\u00f3ria  ",
+            "3. Um tipo de mecanismo de tratamento de exce\u00e7\u00f5es  ",
+            "4. Uma cole\u00e7\u00e3o de fun\u00e7\u00f5es embutidas para opera\u00e7\u00f5es matem\u00e1ticas"
+        ],
+        "topic": "Packages",
+        "options": [
+            "Uma cole\u00e7\u00e3o de fun\u00e7\u00f5es embutidas para opera\u00e7\u00f5es matem\u00e1ticas",
+            "Um m\u00e9todo para gerenciar aloca\u00e7\u00e3o de mem\u00f3ria",
+            "um namespace",
+            "Um tipo de mecanismo de tratamento de exce\u00e7\u00f5es",
+            "Uma estrutura de dados para armazenar inst\u00e2ncias de classe"
+        ]
+    },
+    {
+        "question": "O que \u00e9 um pacote crucial em Java?",
+        "answer": "gerenciar grandes sistemas de software",
+        "difficulty": "medium",
+        "distractors": [
+            "1. organizar componentes de interface do usu\u00e1rio",
+            "2. melhorar recursos de seguran\u00e7a de rede",
+            "3. melhorar a conectividade com bancos de dados",
+            "4. otimizar o uso de mem\u00f3ria em aplicativos"
+        ],
+        "topic": "Packages",
+        "options": [
+            "melhorar recursos de seguran\u00e7a de rede",
+            "organizar componentes de interface do usu\u00e1rio",
+            "melhorar a conectividade com bancos de dados",
+            "otimizar o uso de mem\u00f3ria em aplicativos",
+            "gerenciar grandes sistemas de software"
+        ]
+    },
+    {
+        "question": "O que os pacotes facilitam?",
+        "answer": "distribui\u00e7\u00e3o e modulariza\u00e7\u00e3o de c\u00f3digo mais f\u00e1cil",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Melhor desempenho e velocidade de execu\u00e7\u00e3o  ",
+            "2. Seguran\u00e7a aprimorada atrav\u00e9s de criptografia de c\u00f3digo-fonte  ",
+            "3. Gera\u00e7\u00e3o autom\u00e1tica de documenta\u00e7\u00e3o para classes  ",
+            "4. Processos simplificados de depura\u00e7\u00e3o e tratamento de erros"
+        ],
+        "topic": "Packages",
+        "options": [
+            "Processos simplificados de depura\u00e7\u00e3o e tratamento de erros",
+            "Gera\u00e7\u00e3o autom\u00e1tica de documenta\u00e7\u00e3o para classes",
+            "distribui\u00e7\u00e3o e modulariza\u00e7\u00e3o de c\u00f3digo mais f\u00e1cil",
+            "Seguran\u00e7a aprimorada atrav\u00e9s de criptografia de c\u00f3digo-fonte",
+            "Melhor desempenho e velocidade de execu\u00e7\u00e3o"
+        ]
+    },
+    {
+        "question": "Qual \u00e9 o principal prop\u00f3sito de um pacote?",
+        "answer": "melhorar a clareza e a manutenibilidade",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Melhorar o desempenho da aplica\u00e7\u00e3o Java",
+            "2. Fornecer um mecanismo para tratamento de erros e gerenciamento de exce\u00e7\u00f5es",
+            "3. Facilitar o uso de m\u00faltiplas linguagens de programa\u00e7\u00e3o em um \u00fanico projeto",
+            "4. Permitir acesso direto a componentes de hardware e recursos do sistema"
+        ],
+        "topic": "Packages",
+        "options": [
+            "Melhorar o desempenho da aplica\u00e7\u00e3o Java",
+            "melhorar a clareza e a manutenibilidade",
+            "Permitir acesso direto a componentes de hardware e recursos do sistema",
+            "Fornecer um mecanismo para tratamento de erros e gerenciamento de exce\u00e7\u00f5es",
+            "Facilitar o uso de m\u00faltiplas linguagens de programa\u00e7\u00e3o em um \u00fanico projeto"
+        ]
+    },
+    {
+        "question": "O que um pacote previne?",
+        "answer": "Conflitos de Nomes",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Duplica\u00e7\u00e3o de C\u00f3digo  ",
+            "2. Vazamentos de Mem\u00f3ria  ",
+            "3. Vulnerabilidades de Seguran\u00e7a  ",
+            "4. Problemas de Desempenho  "
+        ],
+        "topic": "Packages",
+        "options": [
+            "Vulnerabilidades de Seguran\u00e7a",
+            "Problemas de Desempenho",
+            "Duplica\u00e7\u00e3o de C\u00f3digo",
+            "Vazamentos de Mem\u00f3ria",
+            "Conflitos de Nomes"
+        ]
+    },
+    {
+        "question": "Qual \u00e9 a primeira instru\u00e7\u00e3o em um arquivo fonte Java que especifica a qual pacote a classe pertence?",
+        "answer": "Declara\u00e7\u00e3o de Pacote",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Instru\u00e7\u00e3o de Importa\u00e7\u00e3o  ",
+            "2. Declara\u00e7\u00e3o de Classe  ",
+            "3. Modificador P\u00fablico  ",
+            "4. Cabe\u00e7alho de Coment\u00e1rio  "
+        ],
+        "topic": "Packages",
+        "options": [
+            "Declara\u00e7\u00e3o de Classe",
+            "Modificador P\u00fablico",
+            "Cabe\u00e7alho de Coment\u00e1rio",
+            "Instru\u00e7\u00e3o de Importa\u00e7\u00e3o",
+            "Declara\u00e7\u00e3o de Pacote"
+        ]
+    },
+    {
+        "question": "O que \u00e9 uma diretiva que permite ao programador acessar classes de outros pacotes sem precisar especificar seus nomes completos de pacote?",
+        "answer": "Instru\u00e7\u00e3o de Importa\u00e7\u00e3o",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Declara\u00e7\u00e3o de Pacote  ",
+            "2. Modificador de Classe  ",
+            "3. Modificador de Acesso  ",
+            "4. Diretiva de Namespace  "
+        ],
+        "topic": "Packages",
+        "options": [
+            "Diretiva de Namespace",
+            "Modificador de Acesso",
+            "Instru\u00e7\u00e3o de Importa\u00e7\u00e3o",
+            "Modificador de Classe",
+            "Declara\u00e7\u00e3o de Pacote"
+        ]
+    },
+    {
+        "question": "O que a instru\u00e7\u00e3o de importa\u00e7\u00e3o melhora?",
+        "answer": "legibilidade e conveni\u00eancia do c\u00f3digo",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Velocidade de execu\u00e7\u00e3o do c\u00f3digo e efici\u00eancia  ",
+            "2. Capacidades de tratamento de erros e depura\u00e7\u00e3o  ",
+            "3. Gerenciamento e aloca\u00e7\u00e3o de mem\u00f3ria  ",
+            "4. Design e layout da interface do usu\u00e1rio"
+        ],
+        "topic": "Packages",
+        "options": [
+            "Design e layout da interface do usu\u00e1rio",
+            "Gerenciamento e aloca\u00e7\u00e3o de mem\u00f3ria",
+            "Velocidade de execu\u00e7\u00e3o do c\u00f3digo e efici\u00eancia",
+            "legibilidade e conveni\u00eancia do c\u00f3digo",
+            "Capacidades de tratamento de erros e depura\u00e7\u00e3o"
+        ]
+    },
+    {
+        "question": "Se nenhum pacote for declarado, a classe \u00e9 considerada parte de qu\u00ea?",
+        "answer": "pacote padr\u00e3o",
+        "difficulty": "easy",
+        "distractors": [
+            "1. pacote global  ",
+            "2. pacote sem nome  ",
+            "3. pacote padr\u00e3o  ",
+            "4. pacote principal  "
+        ],
+        "topic": "Packages",
+        "options": [
+            "pacote global",
+            "pacote padr\u00e3o",
+            "pacote sem nome",
+            "pacote padr\u00e3o",
+            "pacote principal"
+        ]
+    },
+    {
+        "question": "Por que \u00e9 aconselh\u00e1vel evitar usar o pacote padr\u00e3o em aplicativos maiores?",
+        "answer": "conflitos de nomes e problemas de manuten\u00e7\u00e3o",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Simplifica o c\u00f3digo e o torna mais f\u00e1cil de entender para novos desenvolvedores.",
+            "2. Garante que todas as classes sejam automaticamente p\u00fablicas e acess\u00edveis de qualquer lugar.",
+            "3. Permite tempos de compila\u00e7\u00e3o mais r\u00e1pidos, pois n\u00e3o h\u00e1 declara\u00e7\u00f5es de pacote.",
+            "4. Impede o uso de bibliotecas de terceiros, garantindo um ambiente mais controlado."
+        ],
+        "topic": "Packages",
+        "options": [
+            "Permite tempos de compila\u00e7\u00e3o mais r\u00e1pidos, pois n\u00e3o h\u00e1 declara\u00e7\u00f5es de pacote.",
+            "Impede o uso de bibliotecas de terceiros, garantindo um ambiente mais controlado.",
+            "conflitos de nomes e problemas de manuten\u00e7\u00e3o",
+            "Simplifica o c\u00f3digo e o torna mais f\u00e1cil de entender para novos desenvolvedores.",
+            "Garante que todas as classes sejam automaticamente p\u00fablicas e acess\u00edveis de qualquer lugar."
+        ]
+    },
+    {
+        "question": "Qual \u00e9 um exemplo de um pacote pr\u00e9-definido que vem com o Kit de Desenvolvimento Java?",
+        "answer": "java.lang",
+        "difficulty": "easy",
+        "distractors": [
+            "1. java.util",
+            "2. java.io",
+            "3. java.net",
+            "4. java.math"
+        ],
+        "topic": "Packages",
+        "options": [
+            "java.lang",
+            "java.io",
+            "java.math",
+            "java.net",
+            "java.util"
+        ]
+    },
+    {
+        "question": "Os desenvolvedores podem criar seus pr\u00f3prios pacotes o qu\u00ea?",
+        "answer": "Pacotes definidos pelo usu\u00e1rio",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Pacotes definidos pelo sistema  ",
+            "2. Pacotes Padr\u00e3o  ",
+            "3. Pacotes Predefinidos  ",
+            "4. Pacotes Internos  "
+        ],
+        "topic": "Packages",
+        "options": [
+            "Pacotes definidos pelo sistema",
+            "Pacotes Predefinidos",
+            "Pacotes Padr\u00e3o",
+            "Pacotes definidos pelo usu\u00e1rio",
+            "Pacotes Internos"
+        ]
+    },
+    {
+        "question": "O que o Java oferece para lidar com opera\u00e7\u00f5es de arquivo e intera\u00e7\u00f5es com APIs?",
+        "answer": "bibliotecas e frameworks poderosos",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Uma interface de linha de comando embutida para gerenciamento de arquivos e requisi\u00e7\u00f5es de API  ",
+            "2. Uma interface gr\u00e1fica de usu\u00e1rio (GUI) para simplificar intera\u00e7\u00f5es de arquivos e APIs  ",
+            "3. Um ambiente de desenvolvimento integrado (IDE) que automatiza o manuseio de arquivos e APIs  ",
+            "4. Um conjunto de ferramentas de script leves projetadas para opera\u00e7\u00f5es r\u00e1pidas de arquivos e chamadas de API  "
+        ],
+        "topic": "Working With Files and APIs",
+        "options": [
+            "Um conjunto de ferramentas de script leves projetadas para opera\u00e7\u00f5es r\u00e1pidas de arquivos e chamadas de API",
+            "Uma interface de linha de comando embutida para gerenciamento de arquivos e requisi\u00e7\u00f5es de API",
+            "Um ambiente de desenvolvimento integrado (IDE) que automatiza o manuseio de arquivos e APIs",
+            "Uma interface gr\u00e1fica de usu\u00e1rio (GUI) para simplificar intera\u00e7\u00f5es de arquivos e APIs",
+            "bibliotecas e frameworks poderosos"
+        ]
+    },
+    {
+        "question": "Compreender como trabalhar eficientemente com arquivos e APIs pode fazer o qu\u00ea na funcionalidade de um aplicativo?",
+        "answer": "melhorar significativamente",
+        "difficulty": "easy",
+        "distractors": [
+            "1. reduzir significativamente a velocidade do aplicativo  ",
+            "2. limitar a compatibilidade do aplicativo com diferentes plataformas  ",
+            "3. complicar a interface do usu\u00e1rio do aplicativo  ",
+            "4. restringir o acesso do aplicativo a recursos externos  "
+        ],
+        "topic": "Working With Files and APIs",
+        "options": [
+            "restringir o acesso do aplicativo a recursos externos",
+            "reduzir significativamente a velocidade do aplicativo",
+            "complicar a interface do usu\u00e1rio do aplicativo",
+            "limitar a compatibilidade do aplicativo com diferentes plataformas",
+            "melhorar significativamente"
+        ]
+    },
+    {
+        "question": "Quais s\u00e3o os conceitos fundamentais de trabalhar com arquivos e APIs em Java?",
+        "answer": "import\u00e2ncia, terminologia-chave, padr\u00f5es e melhores pr\u00e1ticas",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Estruturas de dados, algoritmos, interfaces de usu\u00e1rio e intera\u00e7\u00f5es com banco de dados",
+            "2. Gerenciamento de mem\u00f3ria, tratamento de erros, multithreading e otimiza\u00e7\u00e3o de c\u00f3digo",
+            "3. Controle de vers\u00e3o, estrat\u00e9gias de implanta\u00e7\u00e3o, frameworks de teste e padr\u00f5es de documenta\u00e7\u00e3o",
+            "4. Protocolos de rede, medidas de seguran\u00e7a, interfaces gr\u00e1ficas e m\u00e9tricas de desempenho"
+        ],
+        "topic": "Working With Files and APIs",
+        "options": [
+            "Gerenciamento de mem\u00f3ria, tratamento de erros, multithreading e otimiza\u00e7\u00e3o de c\u00f3digo",
+            "import\u00e2ncia, terminologia-chave, padr\u00f5es e melhores pr\u00e1ticas",
+            "Protocolos de rede, medidas de seguran\u00e7a, interfaces gr\u00e1ficas e m\u00e9tricas de desempenho",
+            "Controle de vers\u00e3o, estrat\u00e9gias de implanta\u00e7\u00e3o, frameworks de teste e padr\u00f5es de documenta\u00e7\u00e3o",
+            "Estruturas de dados, algoritmos, interfaces de usu\u00e1rio e intera\u00e7\u00f5es com banco de dados"
+        ]
+    },
+    {
+        "question": "Que tipo de aplicativos os leitores aprender\u00e3o sobre trabalhar com arquivos e APIs em Java?",
+        "answer": "aplicativos orientados a dados",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Aplicativos multim\u00eddia  ",
+            "2. Aplicativos baseados na web  ",
+            "3. Aplicativos de desenvolvimento de jogos  ",
+            "4. Aplicativos de n\u00edvel de sistema  "
+        ],
+        "topic": "Working With Files and APIs",
+        "options": [
+            "Aplicativos baseados na web",
+            "Aplicativos de n\u00edvel de sistema",
+            "Aplicativos multim\u00eddia",
+            "Aplicativos de desenvolvimento de jogos",
+            "aplicativos orientados a dados"
+        ]
+    },
+    {
+        "question": "O que se refere \u00e0s opera\u00e7\u00f5es que permitem a um programa criar, ler, escrever e manipular arquivos no sistema de arquivos?",
+        "answer": "Manipula\u00e7\u00e3o de Arquivos",
+        "difficulty": "easy",
+        "distractors": [
+            "1. Gerenciamento de Dados",
+            "2. Aloca\u00e7\u00e3o de Mem\u00f3ria",
+            "3. Processamento de Entrada/Sa\u00edda",
+            "4. Aloca\u00e7\u00e3o de Recursos"
+        ],
+        "topic": "Working With Files and APIs",
+        "options": [
+            "Manipula\u00e7\u00e3o de Arquivos",
+            "Gerenciamento de Dados",
+            "Aloca\u00e7\u00e3o de Mem\u00f3ria",
+            "Aloca\u00e7\u00e3o de Recursos",
+            "Processamento de Entrada/Sa\u00edda"
+        ]
+    },
+    {
+        "question": "O que s\u00e3o abstra\u00e7\u00f5es que representam opera\u00e7\u00f5es de entrada e sa\u00edda?",
+        "answer": "Streams",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Buffers  ",
+            "2. Canais  ",
+            "3. Arquivos  ",
+            "4. Sockets  "
+        ],
+        "topic": "Working With Files and APIs",
+        "options": [
+            "Canais",
+            "Buffers",
+            "Arquivos",
+            "Sockets",
+            "Streams"
+        ]
+    },
+    {
+        "question": "O que utiliza um buffer para melhorar o desempenho de I/O, minimizando o n\u00famero de opera\u00e7\u00f5es de leitura/grava\u00e7\u00e3o?",
+        "answer": "Streams Bufferizados",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Streams Diretos  ",
+            "2. Streams N\u00e3o Bufferizados  ",
+            "3. Streams de Dados  ",
+            "4. Streams de Caracteres  "
+        ],
+        "topic": "Working With Files and APIs",
+        "options": [
+            "Streams de Caracteres",
+            "Streams N\u00e3o Bufferizados",
+            "Streams Bufferizados",
+            "Streams de Dados",
+            "Streams Diretos"
+        ]
+    },
+    {
+        "question": "O que permite opera\u00e7\u00f5es de arquivo mais avan\u00e7adas?",
+        "answer": "canais de arquivo",
+        "difficulty": "medium",
+        "distractors": [
+            "1. BufferedInputStream",
+            "2. PrintWriter",
+            "3. FileReader",
+            "4. DataOutputStream"
+        ],
+        "topic": "Working With Files and APIs",
+        "options": [
+            "PrintWriter",
+            "DataOutputStream",
+            "BufferedInputStream",
+            "canais de arquivo",
+            "FileReader"
+        ]
+    },
+    {
+        "question": "Qual \u00e9 um padr\u00e3o comum que envolve abrir um arquivo, ler seu conte\u00fado e fechar o arquivo?",
+        "answer": "Ler Arquivos",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Escrever Arquivos",
+            "2. Transmitir Dados",
+            "3. Analisar Entrada",
+            "4. Serializar Objetos"
+        ],
+        "topic": "Working With Files and APIs",
+        "options": [
+            "Serializar Objetos",
+            "Escrever Arquivos",
+            "Transmitir Dados",
+            "Analisar Entrada",
+            "Ler Arquivos"
+        ]
+    },
+    {
+        "question": "Quais s\u00e3o abordagens comuns para abrir um arquivo, ler seu conte\u00fado e fech\u00e1-lo?",
+        "answer": "leitores bufferizados ou canais de arquivo",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Usar uma DataInputStream e PrintStream para opera\u00e7\u00f5es de arquivo  ",
+            "2. Empregar a classe Scanner e FileWriter para ler e escrever arquivos  ",
+            "3. Utilizar RandomAccessFile para acesso direto ao conte\u00fado do arquivo  ",
+            "4. Implementar InputStreamReader e FileOutputStream para processamento de arquivos"
+        ],
+        "topic": "Working With Files and APIs",
+        "options": [
+            "Usar uma DataInputStream e PrintStream para opera\u00e7\u00f5es de arquivo",
+            "Implementar InputStreamReader e FileOutputStream para processamento de arquivos",
+            "leitores bufferizados ou canais de arquivo",
+            "Empregar a classe Scanner e FileWriter para ler e escrever arquivos",
+            "Utilizar RandomAccessFile para acesso direto ao conte\u00fado do arquivo"
+        ]
+    },
+    {
+        "question": "O que pode ser realizado usando streams de sa\u00edda?",
+        "answer": "Escrever Arquivos",
+        "difficulty": "medium",
+        "distractors": [
+            "1. Ler Dados de Conex\u00f5es de Rede  ",
+            "2. Criptografar Informa\u00e7\u00f5es Sens\u00edveis  ",
+            "3. Compactar Grandes Arquivos  ",
+            "4. Exibir Gr\u00e1ficos na Tela  "
+        ],
+        "topic": "Working With Files and APIs",
+        "options": [
+            "Compactar Grandes Arquivos",
+            "Escrever Arquivos",
+            "Criptografar Informa\u00e7\u00f5es Sens\u00edveis",
+            "Exibir Gr\u00e1ficos na Tela",
+            "Ler Dados de Conex\u00f5es de Rede"
+        ]
+    }
+]
