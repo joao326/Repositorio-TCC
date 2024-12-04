@@ -79,9 +79,13 @@ def update_session_state():
         ss['score'] = 0
     elif ss.counter == 2:
         ss['stop'] = True
-    else:
-        st.write("# GAP.AI")
 
+#st.write("# GAP.AI")
+if ss['counter'] == 0:
+    st.title("GAP.AI")
+    #st.subheader("Bem vindo!")
+    st.write("Bem vindo! Descubra suas lacunas de aprendizado e saiba qual conteúdo estudar para aprender de maneira mais eficiente!")
+    st.write("Clique no botão abaixo para iniciar a prova.")
 
 col3, col4 = st.columns([1,1.25])
 # Inicializando botão
