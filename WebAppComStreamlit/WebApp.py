@@ -1,6 +1,10 @@
-import streamlit as st
+import streamlit as st 
 from Prova import Prova
 import time
+
+# Streamlit é stateless
+# Stateless: código é reexecutado a cada interação do usuário
+# Variáveis normais são reinicializadas, mas session states não
 
 scorecard_placeholder = st.empty()
 
@@ -19,7 +23,7 @@ questoes_por_topico = {
 }
 total_de_questoes = sum(questoes_por_topico.values())
 
-# Apelidando session_state
+# ss armazena e gerencia estados de variáveis entre interações do usuário
 ss = st.session_state
 
 # Inicializando session_states
@@ -34,7 +38,7 @@ if 'refresh' not in ss:
 if "button_label" not in ss:
     ss['button_label'] = ['START', 'SUBMIT', 'RELOAD']
 if 'prova' not in ss:
-    prova = Prova('perguntas.json', questoes_por_topico)
+    prova = Prova('perguntasT.json', questoes_por_topico)
     prova.gerar_prova()
     ss['prova'] = prova.prova
 if 'current_question' not in ss:
@@ -43,6 +47,9 @@ if 'user_answers' not in ss:
     ss['user_answers'] = []
 if 'score' not in ss:
     ss['score'] = 0
+
+if 'feedback' not in ss:
+    ss['feedback'] = False
 
 # Caractere de nova linha
 def new_line(num_de_linhas):
@@ -64,7 +71,7 @@ def btn_click():
 def update_session_state():
     if ss.counter == 1:
         ss['start'] = True
-        prova = Prova('perguntas.json', questoes_por_topico)
+        prova = Prova('perguntasT.json', questoes_por_topico)
         prova.gerar_prova()
         ss['prova'] = prova.prova
         ss['current_question'] = 0
@@ -72,6 +79,9 @@ def update_session_state():
         ss['score'] = 0
     elif ss.counter == 2:
         ss['stop'] = True
+    else:
+        st.write("# GAP.AI")
+
 
 # Inicializando botão
 st.button(label=ss.button_label[ss.counter], key='button_press', on_click=btn_click)
@@ -91,27 +101,49 @@ def verificar_resposta(user_choice):
     current_question = ss['current_question']
     question = ss['prova'][current_question]
 
-    if user_choice.strip() == question['answer'].strip():
-        st.success("Resposta Correta!")
-        ss['score'] += 1
-    else:
-        st.error(f"Resposta Incorreta! A resposta correta é: {question['answer']}")
+    with st.container():
+        if user_choice.strip() == question['answer'].strip():
+            st.success("Resposta Correta!")
+            ss['score'] += 1
+        else:
+            st.error(f"Resposta Incorreta! A resposta correta é: {question['answer']}")
     ss['user_answers'].append(user_choice)
+    ss['feedback'] = True
+
+def proxima_pergunta():
     ss['current_question'] += 1
+    ss['feedback'] = False
 
 def mostrar_resultado():
     st.write("## Resultado Final")
     st.write(f"Você acertou {ss['score']} de {total_de_questoes} perguntas!")
     if st.button("Reiniciar Quiz"):
-        ss['counter'] = 0
-        ss.clear()    
+        ss['counter'] = 0 # ?
+        ss.clear()   
+        st.rerun() 
 
 def gerenciar_questao():
+    # if do processo de resolução da prova
     if ss['start'] and ss['current_question'] < total_de_questoes:
+        st.write(f"Progresso: {ss['current_question'] + 1} / {total_de_questoes}")
         user_choice = mostrar_pergunta()
-        if st.button("Verificar Resposta", key=f"verificar_{ss['current_question']}"):
-            verificar_resposta(user_choice)
 
+        #ss['user_choice'] = user_choice
+
+        # Criação de colunas para botões a seguir
+        col1, col2 = st.columns([1,2])
+        
+        with col1:
+            if st.button("Verificar Resposta", key=f"verificar_{ss['current_question']}"):
+                verificar_resposta(user_choice)
+
+        with col2:        
+            if ss['feedback']:  # Caso ainda não tenha mostrado o feedback
+                if st.button("Próxima Pergunta", key=f"proxima_{ss['current_question']}"):
+                    proxima_pergunta()
+                    st.rerun()
+
+    # Mostrar resultado ao finalizar
     elif ss['current_question'] >= total_de_questoes:
         mostrar_resultado()
 gerenciar_questao()

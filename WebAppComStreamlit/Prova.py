@@ -11,7 +11,7 @@ class Prova:
         :param questoes_por_topico: Dicionário com o número de questões a serem selecionadas por tópico.
         """
         self.questoes_por_topico = questoes_por_topico
-        with open(arquivo_json, 'r') as f:
+        with open(arquivo_json, 'r',encoding='utf-8') as f:
             self.perguntas = json.load(f)
         self.prova = []
 
