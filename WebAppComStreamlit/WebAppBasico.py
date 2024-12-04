@@ -1,12 +1,13 @@
 import streamlit as st 
-from Prova import Prova
 import time
+from Prova import Prova
+from pfa import registrar_resposta, calcular_pfa, gerar_feedback_final
 
 # Streamlit é stateless
 # Stateless: código é reexecutado a cada interação do usuário
 # Variáveis normais são reinicializadas, mas session states não
 
-#scorecard_placeholder = st.empty()
+scorecard_placeholder = st.empty()
 
 # Definição da quantidade questões
 questoes_por_topico = {
@@ -26,32 +27,30 @@ total_de_questoes = sum(questoes_por_topico.values())
 # ss armazena e gerencia estados de variáveis entre interações do usuário
 ss = st.session_state
 
-def inicializar_ss():
-    if 'counter' not in ss:
-        ss['counter'] = 0
-    if 'start' not in ss:
-        ss['start'] = False
-    if 'stop' not in ss:
-        ss['stop'] = False
-    if 'refresh' not in ss:
-        ss['refresh'] = False
-    if "button_label" not in ss:
-        ss['button_label'] = ['START', 'SUBMIT', 'RELOAD']
-    if 'prova' not in ss:
-        prova = Prova('perguntasT.json', questoes_por_topico)
-        prova.gerar_prova()
-        ss['prova'] = prova.prova
-    if 'current_question' not in ss:
-        ss['current_question'] = 0
-    if 'user_answers' not in ss:
-        ss['user_answers'] = []
-    if 'score' not in ss:
-        ss['score'] = 0
+# Inicializando session_states
+if 'counter' not in ss:
+    ss['counter'] = 0
+if 'start' not in ss:
+    ss['start'] = False
+if 'stop' not in ss:
+    ss['stop'] = False
+if 'refresh' not in ss:
+    ss['refresh'] = False
+if "button_label" not in ss:
+    ss['button_label'] = ['START', 'SUBMIT', 'RELOAD']
+if 'prova' not in ss:
+    prova = Prova('perguntasT.json', questoes_por_topico)
+    prova.gerar_prova()
+    ss['prova'] = prova.prova
+if 'current_question' not in ss:
+    ss['current_question'] = 0
+if 'user_answers' not in ss:
+    ss['user_answers'] = []
+if 'score' not in ss:
+    ss['score'] = 0
 
-    if 'feedback' not in ss:
-        ss['feedback'] = False
-
-inicializar_ss()
+if 'feedback' not in ss:
+    ss['feedback'] = False
 
 # Caractere de nova linha
 def new_line(num_de_linhas):
@@ -82,7 +81,6 @@ def update_session_state():
     elif ss.counter == 2:
         ss['stop'] = True
 
-# Interface inicial
 #st.write("# GAP.AI")
 if ss['counter'] == 0:
     st.title("GAP.AI")
