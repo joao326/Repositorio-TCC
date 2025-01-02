@@ -36,18 +36,24 @@ def calcular_pfa(desempenho_usuario, alpha=1.0, beta=0.5):
         resultados[topico] = max(0, alpha * acertos - beta * erros)  # Garante não negativo
     return resultados
 
-def gerar_feedback_final(pfa_resultados, limite_baixo=5, limite_medio=10):
+def gerar_feedback_final(pfa_resultados, total_questoes, limite_baixo_ratio=0.1, limite_medio_ratio=0.2):
     """
     Gera o feedback final com base nos resultados do PFA.
 
     Args:
         pfa_resultados (dict): Dicionário com os resultados do PFA para cada tópico.
-        limite_baixo (int): Limite inferior para classificação de prioridade.
-        limite_medio (int): Limite médio para classificação adequada.
+        total_questoes (int): Número total de questões.
+        limite_baixo_ratio (float): Razão para calcular o limite inferior.
+        limite_medio_ratio (float): Razão para calcular o limite médio.
 
     Returns:
         dict: Dicionário com o feedback classificado em 'prioridade', 'adequado' e 'excelente'.
     """
+
+    limite_baixo = total_questoes * limite_baixo_ratio
+    limite_medio = total_questoes * limite_medio_ratio
+
+    # Calcula os limites com base nos resultados
     feedback = {"prioridade": [], "adequado": [], "excelente": []}
     for topico, desempenho in pfa_resultados.items():
         if desempenho < limite_baixo:

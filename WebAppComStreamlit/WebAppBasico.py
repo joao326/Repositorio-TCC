@@ -113,7 +113,7 @@ def mostrar_resultado():
     st.write(f"Você acertou {ss['score']} de {total_de_questoes} perguntas!")
 
     pfa_resultados = calcular_pfa(ss['desempenho_usuario'])
-    feedback = gerar_feedback_final(pfa_resultados)
+    feedback = gerar_feedback_final(pfa_resultados, total_de_questoes)
 
     st.write("### Feedback do seu desempenho:")
     st.write("#### Prioridade para estudo:")
