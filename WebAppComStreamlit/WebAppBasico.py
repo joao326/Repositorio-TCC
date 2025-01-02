@@ -6,19 +6,19 @@ from pfa import registrar_resposta, calcular_pfa, gerar_feedback_final
 ss = st.session_state
 
 if 'num_questoes' not in ss:
-    ss['num_questoes'] = 30  # Valor padrão
+    ss['num_questoes'] = 0  # Valor padrão
 
 def ajustar_questoes_por_topico(num_questoes):
     # Calcula o número de questões por tópico com base na quantidade total selecionada
     questoes_por_topico = {}
-    num_questoes_por_topico = num_questoes // len(questoes_por_topico_total)
+    num_questoes_por_topico = num_questoes // len(questoes_por_topico_total) # ?
     
     for topico in questoes_por_topico_total:
         questoes_por_topico[topico] = num_questoes_por_topico
     
     return questoes_por_topico
 
-questoes_por_topico_total = {
+questoes_por_topico_total = { # total = 101
     "Basic Syntax": 11,
     "DataTypes, Variables": 11,
     "Conditionals": 9,
@@ -152,8 +152,8 @@ if not ss['start']:
     st.header("Configurações da Prova")
     ss['num_questoes'] = st.radio(
         "Escolha a quantidade de questões(quanto mais questões mais exato é o resultado):",
-        options=[3,30, 40, 50, 60],
-        index=0  # Seleciona 30 como padrão
+        options=[10,30, 40, 50, 60],
+        index=0  # Seleciona 30 como padrão (Precisa mesmo?)
     )
     if st.button("Iniciar Prova"):
         atualizar_ss()
