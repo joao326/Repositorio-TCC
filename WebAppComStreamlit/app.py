@@ -113,7 +113,14 @@ def mostrar_resultado():
     st.write(f"Você acertou {ss['score']} de {total_de_questoes} perguntas!")
 
     pfa_resultados = calcular_pfa(ss['desempenho_usuario'])
-    feedback = gerar_feedback_final(pfa_resultados, total_de_questoes)
+
+    feedback = gerar_feedback_final({topico: resultado["p"] for topico, resultado in pfa_resultados.items()}, total_de_questoes)
+
+    # Exibe a pontuação por tópico
+    st.write("### Pontuação por Tópico:")
+    for topico, resultados in pfa_resultados.items():
+        nota = round(resultados["p"] * 10, 2)  # Multiplica p por 10 e arredonda
+        st.write(f"- **{topico}**: {nota} / 10")
 
     st.write("### Feedback do seu desempenho:")
     st.write("#### Prioridade para estudo:")
