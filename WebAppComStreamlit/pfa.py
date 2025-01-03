@@ -1,3 +1,5 @@
+import math
+
 def registrar_resposta(desempenho_usuario, topico, acertou, dificuldade):
     """
     Registra a resposta do usuário atualizando seu desempenho no tópico especificado.
@@ -11,29 +13,49 @@ def registrar_resposta(desempenho_usuario, topico, acertou, dificuldade):
     Returns:
         None
     """
-    peso = {"easy": 1, "medium": 2, "hard": 3}[dificuldade]
-    if acertou:
-        desempenho_usuario[topico]["acertos"] += peso
-    else:
-        desempenho_usuario[topico]["erros"] += peso
+    if topico not in desempenho_usuario:
+        desempenho_usuario[topico] = {"acertos": {"easy": 0, "medium": 0, "hard": 0}, "erros": {"easy": 0, "medium": 0, "hard": 0}}
 
-def calcular_pfa(desempenho_usuario, alpha=1.0, beta=0.5):
+    if acertou:
+        desempenho_usuario[topico]["acertos"][dificuldade] += 1
+    else:
+        desempenho_usuario[topico]["erros"][dificuldade] += 1
+
+def calcular_pfa(desempenho_usuario):
     """
-    Calcula o PFA (Performance Feedback Assessment) para cada tópico com base no desempenho do usuário.
+    Calcula o desempenho bruto (m) e a probabilidade (p) para cada tópico com base no desempenho do usuário.
 
     Args:
         desempenho_usuario (dict): Dicionário contendo o desempenho do usuário por tópico.
-        alpha (float): Peso para acertos.
-        beta (float): Peso para erros.
 
     Returns:
-        dict: Dicionário com o PFA calculado para cada tópico.
+        dict: Dicionário com a pontuação (p) para cada tópico.
     """
+    # Pesos para acertos e erros conforme a dificuldade
+    pesos_acerto = {"easy": 0.993, "medium": 1.194, "hard": 1.386}
+    pesos_erro = {"easy": 0.5, "medium": 0.6, "hard": 0.8}
+
     resultados = {}
     for topico, dados in desempenho_usuario.items():
         acertos = dados["acertos"]
         erros = dados["erros"]
-        resultados[topico] = max(0, alpha * acertos - beta * erros)  # Garante não negativo
+
+        # Calcula o desempenho bruto (m)
+        desempenho_bruto = sum(
+            acertos[dificuldade] * pesos_acerto[dificuldade] -
+            erros[dificuldade] * pesos_erro[dificuldade]
+            for dificuldade in ["easy", "medium", "hard"]
+        )
+
+        # Calcula a probabilidade (p) usando a função logística
+        probabilidade = 1 / (1 + math.exp(-desempenho_bruto))
+
+        # Armazena os resultados
+        resultados[topico] = {
+            "m": desempenho_bruto,
+            "p": probabilidade
+        }
+
     return resultados
 
 def gerar_feedback_final(pfa_resultados, total_questoes, limite_baixo_ratio=0.1, limite_medio_ratio=0.2):
