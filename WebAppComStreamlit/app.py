@@ -1,6 +1,9 @@
 import streamlit as st
 from Prova import Prova
 from pfa import registrar_resposta, calcular_pfa, gerar_feedback_final
+from db import conectar_banco, criar_tabelas
+from user import registrar_usuario
+from performance import atualizar_desempenho, recuperar_desempenho, aplicar_decaimento
 
 # Streamlit é stateless; variáveis persistem no session_state
 ss = st.session_state
