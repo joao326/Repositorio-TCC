@@ -57,7 +57,12 @@ def inicializar_ss():
         ss['feedback'] = False
 
     if 'desempenho_usuario' not in ss:
-        ss['desempenho_usuario'] = {topico: {"acertos": 0, "erros": 0} for topico in questoes_por_topico}
+        ss['desempenho_usuario'] = {
+            topico: {"acertos": {"easy": 0, "medium": 0, "hard": 0}, 
+                                    "erros": {"easy": 0, "medium": 0, "hard": 0}}
+            for topico in questoes_por_topico
+        }
+
 
 inicializar_ss()
 
@@ -69,7 +74,11 @@ def atualizar_ss():
     ss['current_question'] = 0
     ss['user_answers'] = []
     ss['score'] = 0
-    ss['desempenho_usuario'] = {topico: {"acertos": 0, "erros": 0} for topico in questoes_por_topico}
+    ss['desempenho_usuario'] = {
+        topico: {"acertos": {"easy": 0, "medium": 0, "hard": 0}, 
+                             "erros": {"easy": 0, "medium": 0, "hard": 0}}
+        for topico in questoes_por_topico
+    }
 
 def mostrar_pergunta():
     current_question = ss['current_question']
