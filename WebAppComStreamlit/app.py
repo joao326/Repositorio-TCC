@@ -1,15 +1,40 @@
 import streamlit as st
 from Prova import Prova
 from pfa import registrar_resposta, calcular_pfa, gerar_feedback_final
-from db import conectar_banco, criar_tabelas
-from user import registrar_usuario
+from user import registrar_usuario, autenticar_usuario
 from performance import atualizar_desempenho, recuperar_desempenho, aplicar_decaimento
+from db import criar_tabelas
+
+# Cria as tabelas no banco de dados
+criar_tabelas()
 
 # Streamlit é stateless; variáveis persistem no session_state
 ss = st.session_state
 
 if 'num_questoes' not in ss:
     ss['num_questoes'] = 0  # Valor padrão
+# Autenticação
+if 'usuario_id' not in ss:
+    st.title("Autenticação")
+    email = st.text_input("Email")
+    nome = st.text_input("Nome (apenas para novos usuários)")
+
+    if st.button("Entrar"):
+        usuario_id = autenticar_usuario(email)
+        if not usuario_id:
+            if nome:
+                registrar_usuario(nome, email)
+                usuario_id = autenticar_usuario(email)
+                st.success("Usuário registrado com sucesso!")
+            else:
+                st.error("Usuário não encontrado. Forneça um nome para se registrar.")
+        if usuario_id:
+            ss['usuario_id'] = usuario_id
+            st.rerun()
+        else:
+            st.error("Erro ao autenticar. Tente novamente.")
+if 'usuario_id' in ss:
+    aplicar_decaimento(ss['usuario_id'])
 
 def ajustar_questoes_por_topico(num_questoes):
     # Calcula o número de questões por tópico com base na quantidade total selecionada
@@ -59,10 +84,13 @@ def inicializar_ss():
     if 'feedback' not in ss:
         ss['feedback'] = False
 
-    if 'desempenho_usuario' not in ss:
+    if 'usuario_id' in ss:
+        desempenho = recuperar_desempenho(ss['usuario_id'])
+        ss['desempenho_usuario'] = desempenho
+    else:
         ss['desempenho_usuario'] = {
             topico: {"acertos": {"easy": 0, "medium": 0, "hard": 0}, 
-                                    "erros": {"easy": 0, "medium": 0, "hard": 0}}
+                                "erros": {"easy": 0, "medium": 0, "hard": 0}}
             for topico in questoes_por_topico
         }
 
@@ -104,7 +132,13 @@ def verificar_resposta(user_choice):
 
     dificuldade = question.get("difficulty", "medium")  # 'medium' como padrão
     acertou = user_choice.strip() == question['answer'].strip()
+
+    # Atualiza o desempenho no PFA local
     registrar_resposta(ss['desempenho_usuario'], question['topic'], acertou, dificuldade)
+
+    # Atualiza o desempenho no banco de dados
+    usuario_id = ss['usuario_id']
+    atualizar_desempenho(usuario_id, question['topic'], acertou, dificuldade)
 
     if acertou:
         st.success("Correto!")
@@ -118,7 +152,7 @@ def verificar_resposta(user_choice):
 def proxima_pergunta():
     ss['current_question'] += 1
     ss['feedback'] = False    
-    st.rerun()
+    st.rerun() # use it instead of st.experimental_rerun()
 
 def mostrar_resultado():
     st.write("## Resultado Final")
@@ -141,6 +175,16 @@ def mostrar_resultado():
     st.write(", ".join(feedback['adequado']) or "Nenhum")
     st.write("#### Excelente:")
     st.write(", ".join(feedback['excelente']) or "Nenhum")
+
+    # Info do bd
+    usuario_id = ss['usuario_id']
+    desempenho_atualizado = recuperar_desempenho(usuario_id)
+
+    st.write("### Desempenho por Tópico:")
+    for topico, dados in desempenho_atualizado.items():
+        acertos = dados["acertos"]
+        erros = dados["erros"]
+        st.write(f"- **{topico}**: Acertos: {acertos}, Erros: {erros}")
 
     if st.button("Reiniciar Quiz"):
         ss.clear()

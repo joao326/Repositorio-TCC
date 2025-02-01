@@ -1,4 +1,4 @@
-from WebAppComStreamlit.db import conectar_banco
+from db import conectar_banco
 import sqlite3
 
 def registrar_usuario(nome, email):
