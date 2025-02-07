@@ -101,20 +101,3 @@ class Prova:
                 print(f"Tópico: {pergunta.get('topic', 'Não especificado')}")
                 print(f"Numeração: {pergunta.get('numeração', 'Sem numeração')}")
                 print("-" * 40)
-
-'''
-questoes_por_topico = {
-    "Basic Syntax": 11,
-    "DataTypes, Variables": 11,
-    "Conditionals": 9,
-    "Functions": 11,
-    "Loops": 8,
-    "Exception Handling": 12,
-    "DataStructures": 6,
-    "OOP, Interfaces, Classes": 10,
-    "Packages": 12,
-    "Working With Files and APIs": 11
-}
-prova = Prova("perguntasT.json", questoes_por_topico)
-prova.gerar_prova("prova_processada.json")
-'''
